@@ -1,5 +1,6 @@
 # caMicroscope GSoC
 <img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/>
+
 # Communicating with the mentors
 We intend to use Slack as the primary medium of communication. In the meantime, however, feel free to reach out directly to the listed mentors.
  
