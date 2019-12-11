@@ -4,14 +4,14 @@
 # Communicating with the mentors
 We intend to use Slack and mailing lists as the primary medium of communication. You may send an email to our mailing list camicroscope@googlegroups.com or use Slack camicroscope.slack.com to discuss the project ideas. You may join the caMicroscope slack channel through our shared link - http://bit.ly/camicroscope
  
-# List of Ideas
-Discuss the project on Slack, and once you are ready to submit your application, use the template below. You must submit your application directly using the GSoC Program Site. If you have a project idea that is relevant for caMicroscope, but is not listed here, feel free to consult the mentors to discuss your own idea. The ideas listed below can be open for interpretation. Feel free to discuss with the mentors for clarifications, questions, or alternative suggestions.
+# Sample Ideas
+The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or slack group.  
 
 **[1] Machine Learning and Region of Interest Extraction**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
 
-**Overview:** caMicroscope is a Cancer Digital Pathology exploration and annotation tool.
+**Overview:**
 
 This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. 
 
@@ -20,6 +20,70 @@ This project would involve extending the existing machine learning intergrations
 **Required Skills:** Javascript, TensorFlow-JS (recommended)
 
 **Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels of areas depicting something (e.g. faces).
+
+**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+**[2] Pathology Algorithm Development Workbench **
+
+**Mentors:**  Nan Li (nan.li -at- emory.edu)
+
+**Overview:** 
+
+This project would involve creating an application UI to serve as a workbench for development of pathology and image processing algorithms of different types.
+
+**Current Status:** Much of the basline functionality exists, as do many algorithms, but there isn't a unified page or workflow for them.
+
+**Required Skills:** Javascript, HTML, CSS
+
+**Code Challenge:** Create a simple webpage which incorperates user feedback to draw shapes, iteratively (that is, keep working on the same drawing using user feedback after each iteration).
+
+**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+**[3] High-Dimensional Medical Imaging  **
+
+**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+
+**Overview:** 
+
+This project would involve creating a server and basic client which can interact with high-dimensional data as if it were an image.
+
+**Current Status:** Current image serving is traditional RGB only.
+
+**Required Skills:** python/nodeJs/Java/etc (developer choice), Javascript
+
+**Code Challenge:** Create a server which returns red, green, and blue channels of an image separately, and a client which recombines them into the original image.
+
+**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+**[4] Machine Learning Smart Pens  **
+
+**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+
+**Overview:** 
+
+This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. 
+
+**Current Status:** The current annotation tools perform point simplification after a user finishes drawing.
+
+**Required Skills:** Javascript, tensorFlow.js
+
+**Code Challenge:** Create a page or tool which performs edge detection on a given image and, given coordinates, returns the distance to the closest edge.
+
+**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+**[5] Cross-Slide Coordinated Viewing  **
+
+**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+
+**Overview:** 
+
+This project would involve letting a user view two slides in such a way that when a user pans or zooms the effect is the same on both images. This is intended for showing different stains on similar tissue.
+
+**Current Status:** The current coordinated views only focus upon the same image with different results or annotations.
+
+**Required Skills:** Javascript, openSeaDragon
+
+**Code Challenge:** Link user interaction across two openseadragon instances if a checkbox is checked, otherwise, let them move independently.
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
