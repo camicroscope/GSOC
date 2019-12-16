@@ -7,7 +7,7 @@ caMicroscope is a digital pathology image viewer with support for human/machine 
 # Communicating with the mentors
 We intend to use Slack and mailing lists as the primary medium of communication. You may send an email to our mailing list camicroscope@googlegroups.com or use Slack camicroscope.slack.com to discuss the project ideas. You may join the caMicroscope slack channel through our shared link - http://bit.ly/camicroscope
  
-# Sample Ideas
+# List of Ideas
 The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or slack group.  
 
 ***
