@@ -26,7 +26,7 @@ This project would involve extending the existing machine learning intergrations
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
-**[2] Pathology Algorithm Development Workbench **
+**[2] Pathology Algorithm Development Workbench**
 
 **Mentors:**  Nan Li (nan.li -at- emory.edu)
 
@@ -42,7 +42,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
-**[3] High-Dimensional Medical Imaging  **
+**[3]High-Dimensional Medical Imaging**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
 
@@ -58,7 +58,7 @@ This project would involve creating a server and basic client which can interact
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
-**[4] Machine Learning Smart Pens  **
+**[4]Machine Learning Smart Pens**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
 
@@ -74,7 +74,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
-**[5] Cross-Slide Coordinated Viewing  **
+**[5]Cross-Slide Coordinated Viewing**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
 
