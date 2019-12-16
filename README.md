@@ -10,6 +10,8 @@ We intend to use Slack and mailing lists as the primary medium of communication.
 # Sample Ideas
 The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or slack group.  
 
+***
+
 **[1] Machine Learning and Region of Interest Extraction**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
@@ -25,6 +27,8 @@ This project would involve extending the existing machine learning intergrations
 **Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels of areas depicting something (e.g. faces).
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+***
 
 **[2] Pathology Algorithm Development Workbench**
 
@@ -42,6 +46,8 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
+***
+
 **[3] High-Dimensional Medical Imaging**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
@@ -58,6 +64,8 @@ This project would involve creating a server and basic client which can interact
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
+***
+
 **[4] Machine Learning Smart Pens**
 
 **Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
@@ -73,6 +81,8 @@ This project would involve adapting pathology annotation tools to prefer followi
 **Code Challenge:** Create a page or tool which performs edge detection on a given image and, given coordinates, returns the distance to the closest edge.
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+
+***
 
 **[5] Cross-Slide Coordinated Viewing**
 
