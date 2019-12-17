@@ -1,8 +1,6 @@
-# caMicroscope
-caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope. In addition to caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
+# caMicroscope GSoC 2020
+<img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope. In addition to caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
 
-# GSoC
-<img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/>
 
 # Communicating with the mentors
 We intend to use Slack and mailing lists as the primary medium of communication. You may send an email to our mailing list camicroscope@googlegroups.com or use Slack camicroscope.slack.com to discuss the project ideas. You may join the caMicroscope slack channel through our shared link - http://bit.ly/camicroscope
