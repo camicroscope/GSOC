@@ -102,3 +102,21 @@ This project would involve letting a user view two slides in such a way that whe
 
 ***
 
+**[6] Real-time DICOM Metadata Extractor**
+
+**Mentors:**  Pradeeban Kathiravelu (pradeeban.kathiravelu -at- emory.edu)
+
+**Overview:** 
+
+DICOM [https://www.dicomstandard.org/] is a common standard for to store and transfer medical images. In this project, the student will design and develop a real-time metadata extractor for DICOM images. The student may start from a metadata extractor from the set of DICOM images, and store the extracted metadata in a database (such as MongoDB). The metadata extractor should extract a set of attributes given by the user. In the latter phase, the student will extend the project to extract metadata from the images received real-time, by tracking the already extracted images. The tracking allows student to process metadata of only the new images, avoiding repeated processing. Additionally, the student may build APIs to support workflow executions on recently received DICOM data.
+
+**Current Status:** We have built a Python-based prototype. However, we expect this project to be built in Java, and from the scratch, to avoid limiting the creativity of the student.
+
+**Required Skills:** Java
+
+**Code Challenge:** Create a simple Java program that can read DICOM metadata. Feel free to use existing libraries and modules. However, please cite the original sources if you borrow code online.
+
+**Community and Code License:** New project. Tentatively, BSD 3-Clause License
+
+***
+
