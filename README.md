@@ -18,13 +18,13 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Overview:**
 
-This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. 
+This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. Sprcifically, this task would involve letting a user run a model on an image and download sections of the image based on model output.
 
-**Current Status:** Currently, caMicroscope supports uses of multiple types of models for markup, implemented with TensorFlow-JS.
+**Current Status:** Currently, caMicroscope supports uses of multiple types of models for markup, implemented with TensorFlow-JS. Likewise, download of areas in an image given a bounding box is also supported.
 
 **Required Skills:** Javascript, TensorFlow-JS (recommended)
 
-**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels of areas depicting something (e.g. faces).
+**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels corresponding to bounding boxes of a given object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
@@ -36,7 +36,7 @@ This project would involve extending the existing machine learning intergrations
 
 **Overview:** 
 
-This project would involve creating an application UI to serve as a workbench for development of pathology and image processing algorithms of different types.
+This project would involve creating an application UI to serve as a workbench for development of pathology and image processing algorithms of different types. Desired functionality would focus on helping compare and tune models based upon their results in an interactive setting.
 
 **Current Status:** Much of the basline functionality exists, as do many algorithms, but there isn't a unified page or workflow for them.
 
@@ -54,7 +54,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **Overview:** 
 
-This project would involve creating a server and basic client which can interact with high-dimensional data as if it were an image.
+This project would involve creating a server and basic client which can interact with high-dimensional data as if it were an image. Currently, slide images are transmitted as a series of RGB images cooresponding to the area around where a user is viewing an image. The result of this project would work similarly, but for an arbitrary number of features.
 
 **Current Status:** Current image serving is traditional RGB only.
 
@@ -72,13 +72,13 @@ This project would involve creating a server and basic client which can interact
 
 **Overview:** 
 
-This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. 
+This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. Specific UI flow is up to the implementer; perhaps it's more useful to leave drawings alone, but have a button which snaps drawings to the nearest edge when pushed.
 
-**Current Status:** The current annotation tools perform point simplification after a user finishes drawing.
+**Current Status:** The current annotation tools perform point simplification after a user finishes drawing without any consideration of the base image.
 
 **Required Skills:** Javascript, tensorFlow.js
 
-**Code Challenge:** Create a page or tool which performs edge detection on a given image and, given coordinates, returns the distance to the closest edge.
+**Code Challenge:** Create a page or tool which performs edge detection on a given image and, given a point, returns the distance from that point to the closest edge.
 
 **Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
 
@@ -119,4 +119,3 @@ This project would involve letting a user view two slides in such a way that whe
 **Community and Code License:** New project. Tentatively, BSD 3-Clause License
 
 ***
-
