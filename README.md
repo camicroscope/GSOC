@@ -1,5 +1,5 @@
 # caMicroscope GSoC 2020
-<img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
+<img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
 
 This is the first year that caMicroscope plans to participate in GSoC as a mentoring organization. However, we have been an open source organization for 7 years since inception. Our GSoC mentoring team is composed of past GSoC organization administrators, mentors, and students from the other organizations that participated in the GSoC in the previous years.
 
@@ -26,7 +26,7 @@ This project would involve extending the existing machine learning intergrations
 
 **Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels corresponding to bounding boxes of a given object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
 
-**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+**Source Code:** https://github.com/caMicroscope/caMicroscope 
 
 ***
 
@@ -44,7 +44,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **Code Challenge:** Create a simple webpage which incorporates user feedback to draw shapes, iteratively (that is, keep working on the same drawing using user feedback after each iteration).
 
-**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+**Source Code:** https://github.com/caMicroscope/caMicroscope 
 
 ***
 
@@ -63,7 +63,7 @@ This project would involve creating a server and basic client which can interact
 
 **Code Challenge:** Create a server which returns red, green, and blue channels of an image separately, and a client which recombines them into the original image.
 
-**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+**Source Code:** https://github.com/caMicroscope/caMicroscope
 
 ***
 
@@ -81,7 +81,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **Code Challenge:** Create a page or tool which performs edge detection on a given image and, given a point, returns the distance from that point to the closest edge.
 
-**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+**Source Code:** https://github.com/caMicroscope/caMicroscope
 
 ***
 
@@ -99,7 +99,7 @@ This project would involve letting a user view two slides in such a way that whe
 
 **Code Challenge:** Link user interaction across two OpenSeadragon instances if a checkbox is checked, otherwise, let them move independently.
 
-**Community and Code License:** https://github.com/caMicroscope/caMicroscope BSD 3-Clause License
+**Source Code:** https://github.com/caMicroscope/caMicroscope 
 
 ***
 
@@ -117,6 +117,6 @@ This project would involve letting a user view two slides in such a way that whe
 
 **Code Challenge:** Create a simple Java program that can read DICOM metadata. Feel free to use existing libraries and modules. However, please cite the original sources if you borrow code online.
 
-**Community and Code License:** New project. Tentatively, BSD 3-Clause License
+**Source Code:** New project. 
 
 ***
