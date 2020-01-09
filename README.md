@@ -14,7 +14,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **[1] Machine Learning and Region of Interest Extraction**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
 
 **Overview:**
 
