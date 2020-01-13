@@ -91,9 +91,10 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **Overview:** 
 
-This project would involve letting a user view two slides in such a way that when a user pans or zooms the effect is the same on both images. This is intended for showing different stains on similar tissue.
+Often, it's useful for users to compare different results on an image. To facilitate this, caMicrocope supports viewing the same image with different results, such as heatmaps, segmentations, and annotations, in a coordinated fashion. Since adjacent tissue slice images are usually quite similar, it can be useful to have a similar coordination between different images.
+This project focuses on creating a tool to allow a user to do this. The two different tissue samples may be differently situated in their images, and may require a user to change scale, position, and rotation to sync up the two images.
 
-**Current Status:** The current coordinated views only focus upon the same image with different results or annotations.
+**Current Status:** The current coordinated view tools are used for different results on the same image, with no support for multiple images at once.
 
 **Required Skills:** JavaScript, OpenSeadragon
 
