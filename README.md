@@ -14,7 +14,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **[1] Machine Learning and Region of Interest Extraction**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
+**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
 
 **Overview:**
 
@@ -50,7 +50,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **[3] High-Dimensional Medical Imaging**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com)
 
 **Overview:** 
 
@@ -69,7 +69,7 @@ This project would involve creating a server and basic client which can interact
 
 **[4] Machine Learning Smartpens**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com)
 
 **Overview:** 
 
@@ -87,7 +87,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **[5] Cross-Slide Coordinated Viewing**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
+**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
 
 **Overview:** 
 
