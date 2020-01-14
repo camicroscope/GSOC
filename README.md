@@ -87,7 +87,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **[5] Cross-Slide Coordinated Viewing**
 
-**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu)
+**Mentors:**  Ryan Birmingham (rbirmin -at- emory.edu) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
 
 **Overview:** 
 
