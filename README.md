@@ -106,7 +106,7 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 
 **[6] Real-time DICOM Metadata Extractor**
 
-**Mentors:**  Pradeeban Kathiravelu (pradeeban.kathiravelu -at- emory.edu)
+**Mentors:**  Pradeeban Kathiravelu (kk.pradeeban -at- gmail.com)
 
 **Overview:** 
 
