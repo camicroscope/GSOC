@@ -24,7 +24,7 @@ This project would involve extending the existing machine learning intergrations
 
 **Required Skills:** JavaScript, TensorFlow.js (recommended)
 
-**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which returns positions in pixels corresponding to bounding boxes of a given object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
+**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
