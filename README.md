@@ -20,9 +20,9 @@ The following ideas were created with feedback from contributors and collaborato
 
 This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. Specifically, this task would involve letting a user run a model on an image and download sections of the image based on model output.
 
-**Current Status:** Currently, caMicroscope supports uses of multiple types of models for markup, implemented with TensorFlow.js. Likewise, download of areas in an image given a bounding box is also supported.
-
 The aim is to support a wider range of models and flexible use of their outputs. One such example is a two stage CNN described [here](https://arxiv.org/pdf/1803.04054.pdf). Currently, caMicroscope supports single stage networks showing results directly, but no provision to use those results in any other model. 
+
+**Current Status:** Currently, caMicroscope supports uses of multiple types of models for markup, implemented with TensorFlow.js. Likewise, download of areas in an image given a bounding box is also supported.
 
 **Required Skills:** JavaScript, TensorFlow.js (recommended)
 
