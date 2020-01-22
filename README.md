@@ -142,9 +142,7 @@ Summarize the project in your own words.
 
 **6) Personal Background (Brief CV)**
 
-**7) Links to completed Code Challenge (if applicable)**
-
-**8) Project Goals / Major Contributions**
+**7) Project Goals / Major Contributions**
 
 (Enter as bullets)
 
@@ -154,25 +152,26 @@ Summarize the project in your own words.
      
 ..
 
-**9) Project Schedule**
+**8) Project Schedule**
 
 Break the timeline into periods of 3 – 4 days
 
-**9.1) Community Bonding Period**
+**8.1) Community Bonding Period**
 
-**9.2) Development Phase**
+**8.2) Development Phase**
 
-**9.3) Project Completion, testing, and documentation**
+**8.3) Project Completion, testing, and documentation**
 
-**10) Planned GSoC work hours**
+**9) Planned GSoC work hours**
 
 GSoC is expected to be a full time job, with 35 hours or more a week of contribution. Please indicate the work hours (including the timezone), that you hope to work on your project. 
 
-**11) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
+**10) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
 Please indicate if you have any lectures/classes, examinations, or other personal commitments. 
 
-**12) Skill Set**
+**11) Skill Set**
 
 Your relevant skill set to complete this project. Include pointers to bug fixes, demos, and previous work.
 
+Also include pointers to the completed Code Challenge (if applicable).
