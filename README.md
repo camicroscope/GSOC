@@ -123,3 +123,56 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 **Source Code:** New project. 
 
 ***
+
+# Application Template
+
+The students are encouraged to follow this template. However, they are not expected to strictly follow this template. They are rather advised to clearly include all the requested information in their application.
+
+**1) Project Title:**
+
+**2) Abstract / Project Summary**:
+
+Summarize the project in your own words.
+
+**3) Student Name:**
+
+**4) Student Email and Slack username:**
+
+**5) Potential Mentor(s):**
+
+**6) Personal Background (Brief CV)**
+
+**7) Links to completed Code Challenge (if applicable)**
+
+**8) Project Goals / Major Contributions**
+
+(Enter as bullets)
+
+..
+     
+..
+     
+..
+
+**9) Project Schedule**
+
+Break the timeline into periods of 3 – 4 days
+
+**9.1) Community Bonding Period**
+
+**9.2) Development Phase**
+
+**9.3) Project Completion, testing, and documentation**
+
+**10) Planned GSoC work hours**
+
+GSoC is expected to be a full time job, with 35 hours or more a week of contribution. Please indicate the work hours (including the timezone), that you hope to work on your project. 
+
+**11) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
+
+Please indicate if you have any lectures/classes, examinations, or other personal commitments. 
+
+**12) Skill Set**
+
+Your relevant skill set to complete this project. Include pointers to bug fixes, demos, and previous work.
+
