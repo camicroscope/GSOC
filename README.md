@@ -34,7 +34,7 @@ The aim is to support a wider range of models and flexible use of their outputs.
 
 **[2] Pathology Algorithm Development Workbench**
 
-**Mentors:**  Nan Li (nan.li -at- emory.edu)
+**Mentors:**  Nan Li (nan.li -at- emory.edu) and Erich Bremer (erich.bremer -at- stonybrook.edu)
 
 **Overview:** 
 
@@ -52,7 +52,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **[3] High-Dimensional Medical Imaging**
 
-**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com)
+**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Erich Bremer (erich.bremer -at- stonybrook.edu)
 
 **Overview:** 
 
