@@ -12,7 +12,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 ***
 
-**[1] Machine Learning and Region of Interest Extraction**
+**[1] Cancer Region of Interest Extraction and Machine Learning**
 
 **Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
 
