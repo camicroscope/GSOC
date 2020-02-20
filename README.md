@@ -30,6 +30,8 @@ The aim is to support a wider range of models and flexible use of their outputs.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
+**Slack Room:** interest-extraction 
+
 ***
 
 **[2] Pathology Algorithm Development Workbench**
@@ -47,6 +49,8 @@ This project would involve creating an application UI to serve as a workbench fo
 **Code Challenge:** Create a simple webpage which incorporates user feedback to draw shapes, iteratively (that is, keep working on the same drawing using user feedback after each iteration).
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
+
+**Slack Room:** dev-workbench 
 
 ***
 
@@ -67,6 +71,8 @@ This project would involve creating a server and basic client which can interact
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope
 
+**Slack Room:** hd-imaging 
+
 ***
 
 **[4] Machine Learning Smartpens**
@@ -84,6 +90,8 @@ This project would involve adapting pathology annotation tools to prefer followi
 **Code Challenge:** Create a page or tool which performs edge detection on a given image and, given a point, returns the distance from that point to the closest edge.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope
+
+**Slack Room:** smartpens
 
 ***
 
@@ -104,6 +112,8 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
+**Slack Room:** coordinated-view
+
 ***
 
 **[6] Real-time DICOM Metadata Extractor**
@@ -121,6 +131,8 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 **Code Challenge:** Create a simple Java program that can read DICOM metadata. Feel free to use existing libraries and modules. However, please cite the original sources if you borrow code online.
 
 **Source Code:** New project. 
+
+**Slack Room:** dicom-extract
 
 ***
 
