@@ -14,7 +14,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **[1] Cancer Region of Interest Extraction and Machine Learning**
 
-**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
+**Mentors:**  Ryan Birmingham and Insiyah Hajoori
 
 **Overview:**
 
@@ -36,7 +36,7 @@ The aim is to support a wider range of models and flexible use of their outputs.
 
 **[2] Pathology Algorithm Development Workbench**
 
-**Mentors:**  Nan Li (nan.li -at- emory.edu) and Erich Bremer (erich.bremer -at- stonybrook.edu)
+**Mentors:**  Nan Li and Erich Bremer 
 
 **Overview:** 
 
@@ -56,7 +56,7 @@ This project would involve creating an application UI to serve as a workbench fo
 
 **[3] High-Dimensional Medical Imaging**
 
-**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Erich Bremer (erich.bremer -at- stonybrook.edu)
+**Mentors:**  Ryan Birmingham and Erich Bremer
 
 **Overview:** 
 
@@ -77,7 +77,7 @@ This project would involve creating a server and basic client which can interact
 
 **[4] Machine Learning Smartpens**
 
-**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com)
+**Mentors:**  Ryan Birmingham
 
 **Overview:** 
 
@@ -97,7 +97,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **[5] Cross-Slide Coordinated Viewing**
 
-**Mentors:**  Ryan Birmingham (rainventions - at- gmail.com) and Insiyah Hajoori (hajooriinsiyah -at- gmail.com)
+**Mentors:**  Ryan Birmingham and Insiyah Hajoori
 
 **Overview:** 
 
@@ -118,7 +118,7 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 
 **[6] Real-time DICOM Metadata Extractor**
 
-**Mentors:**  Pradeeban Kathiravelu (kk.pradeeban -at- gmail.com)
+**Mentors:**  Pradeeban Kathiravelu
 
 **Overview:** 
 
