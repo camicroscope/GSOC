@@ -14,7 +14,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **[1] Cancer Region of Interest Extraction and Machine Learning**
 
-**Mentors:**  Ryan Birmingham and Insiyah Hajoori
+**Mentors:**  Insiyah Hajoori and Ryan Birmingham 
 
 **Overview:**
 
