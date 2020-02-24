@@ -36,17 +36,17 @@ The aim is to support a wider range of models and flexible use of their outputs.
 
 **[2] Pathology Algorithm Development Workbench**
 
-**Mentors:**  Nan Li and Erich Bremer 
+**Mentors:**  Nan Li and Ryan Birmingham 
 
 **Overview:** 
 
-This project would involve creating an application UI to serve as a workbench for development of pathology and image processing algorithms of different types. Desired functionality would focus on helping compare and tune models based upon their results in an interactive setting.
+This project aims to allow users to create and train machine learning models entirely within caMicroscope. Since deployments in caMicroscope often have a large number of images with labeled patches or features, this already-labeled data could be used to train an algorithm. To complete this new proposed workflow, the addition of two user experience elements would be needed. The first to allow a user to create the architecture of an algorithm, and the second to let a user select training data. It would be expected that this would work entirely within the browser, but use of additional microservices can be used if deemed necessary. 
 
-**Current Status:** Much of the baseline functionality exists, as do many algorithms, but there isn't a unified page or workflow for them.
+**Current Status:** Currently, many components of the proposed workflow exist, including multiple methods of image labeling, the ability to get small portions of a whole slide image, and the ability to test and inspect a trained model on portions of an image. These are currently distinct applications on the toolbar, and don’t directly work together.
 
-**Required Skills:** JavaScript, HTML, CSS
+**Required Skills:** JavaScript, HTML, CSS, TensorFlow.js
 
-**Code Challenge:** Create a simple webpage which incorporates user feedback to draw shapes, iteratively (that is, keep working on the same drawing using user feedback after each iteration).
+**Code Challenge:** Create a webpage for a model using tensorflow js layers with at least one layer that a user can choose. This tool should use the model.fit command to train based upon the user’s layer selection in the browser. This is a proof of concept, so performance of the specific model is not important. The [guide on migrating from keras to tfjs](https://www.tensorflow.org/js/guide/layers_for_keras_users) may be a useful resource.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
