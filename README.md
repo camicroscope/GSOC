@@ -5,7 +5,7 @@ This is the first year that caMicroscope plans to participate in GSoC as a mento
 
 
 # Communicating with the mentors
-We intend to use Slack and mailing lists as the primary medium of communication. You may send an email to our mailing list camicroscope@googlegroups.com or use Slack camicroscope.slack.com to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
+We intend to use Slack as the primary medium of communication. The slack room at camicroscope.slack.com is used to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
  
 # List of Ideas
 The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
