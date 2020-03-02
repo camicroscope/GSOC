@@ -8,7 +8,7 @@ This is the first year that caMicroscope plans to participate in GSoC as a mento
 We intend to use Slack as the primary medium of communication. The slack room at camicroscope.slack.com is used to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
  
 # List of Ideas
-The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
+The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance with the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas in the email list or on the Slack group.  
 
 ***
 
@@ -18,7 +18,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Overview:**
 
-This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. Specifically, this task would involve letting a user run a model on an image and download sections of the image based on model output.
+This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow the users and scientists to train other models for tasks such as synthetic data generation. Specifically, this task would involve letting a user run a model on an image and download sections of the image based on model output.
 
 The aim is to support a wider range of models and flexible use of their outputs. One such example is a two stage CNN described [here](https://arxiv.org/pdf/1803.04054.pdf). Currently, caMicroscope supports single stage networks showing results directly, but no provision to use those results in any other model. 
 
@@ -26,7 +26,7 @@ The aim is to support a wider range of models and flexible use of their outputs.
 
 **Required Skills:** JavaScript, TensorFlow.js (recommended)
 
-**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
+**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which identifies an objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
