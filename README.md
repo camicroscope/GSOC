@@ -54,28 +54,7 @@ This project aims to allow users to create and train machine learning models ent
 
 ***
 
-**[3] High-Dimensional Medical Imaging**
-
-**Mentors:**  Ryan Birmingham and Erich Bremer
-
-**Overview:** 
-
-This project would involve creating a server and basic client which can interact with high-dimensional data as if it were an image. Currently, slide images are transmitted as a series of RGB images corresponding to the area around where a user is viewing an image. The result of this project would work similarly, but for an arbitrary number of features.
-
-**Current Status:** Current image serving is traditional RGB only.
-
-**Required Skills:** JavaScript
-**Optional Skills:** Python/Node.js/Java/etc (developer choice)
-
-**Code Challenge:** Create a server which returns red, green, and blue channels of an image separately, and a client which recombines them into the original image.
-
-**Source Code:** https://github.com/caMicroscope/caMicroscope
-
-**Slack Room:** hd-imaging 
-
-***
-
-**[4] Machine Learning Smartpens**
+**[3] Machine Learning Smartpens**
 
 **Mentors:**  Ryan Birmingham
 
@@ -95,7 +74,7 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 ***
 
-**[5] Cross-Slide Coordinated Viewing**
+**[4] Cross-Slide Coordinated Viewing**
 
 **Mentors:**  Ryan Birmingham and Insiyah Hajoori
 
@@ -116,7 +95,7 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 
 ***
 
-**[6] Real-time DICOM Metadata Extractor**
+**[5] Real-time DICOM Metadata Extractor**
 
 **Mentors:**  Pradeeban Kathiravelu
 
