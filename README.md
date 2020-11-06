@@ -1,3 +1,6 @@
+# NOTICE FOR GSOC 2021
+For 2021, the scope of GSOC projects have changed. Since the projects will be shorter, the camicroscope community will be able to focus on smaller interesting projects. We look forward to sharing our thoughts going forward, and thank you for your patience.
+
 # caMicroscope GSoC 2020
 <img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
 
@@ -13,6 +16,8 @@ The following ideas were created with feedback from contributors and collaborato
 ***
 
 **[1] Cancer Region of Interest Extraction and Machine Learning**
+
+**NOTE** This project was run in 2020. There may or may not be follow-up work. Please stay tuned.
 
 **Mentors:**  Insiyah Hajoori and Ryan Birmingham 
 
@@ -35,6 +40,8 @@ The aim is to support a wider range of models and flexible use of their outputs.
 ***
 
 **[2] Pathology Algorithm Development Workbench**
+
+**NOTE** This project was run in 2020. There may or may not be follow-up work. Please stay tuned.
 
 **Mentors:**  Nan Li and Ryan Birmingham 
 
