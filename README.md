@@ -1,67 +1,18 @@
-# NOTICE FOR GSOC 2021
-For 2021, the scope of GSOC projects have changed. Since the projects will be shorter, the camicroscope community will be able to focus on smaller interesting projects. We look forward to sharing our thoughts going forward, and thank you for your patience.
-
-# caMicroscope GSoC 2020
+# caMicroscope GSoC 2021
 <img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
 
-This is the first year that caMicroscope plans to participate in GSoC as a mentoring organization. However, we have been an open source organization for 7 years since inception. Our GSoC mentoring team is composed of past GSoC organization administrators, mentors, and students from the other organizations that participated in the GSoC in the previous years.
-
+For 2021, the scope of GSOC projects have changed. Since the projects will be shorter, the camicroscope community will be able to focus on smaller interesting projects. We look forward to sharing our thoughts going forward, and thank you for your patience.
 
 # Communicating with the mentors
 We intend to use Slack as the primary medium of communication. The slack room at camicroscope.slack.com is used to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
  
 # List of Ideas
 The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
+** More ideas are upcoming **
 
 ***
 
-**[1] Cancer Region of Interest Extraction and Machine Learning**
-
-**NOTE** This project was run in 2020. There may or may not be follow-up work. Please stay tuned.
-
-**Mentors:**  Insiyah Hajoori and Ryan Birmingham 
-
-**Overview:**
-
-This project would involve extending the existing machine learning intergrations beyond marking up images, and allow users to fetch regions of interest from a given slide automatically. This would allow for users and scientists to train other models for tasks such as synthetic data generation. Specifically, this task would involve letting a user run a model on an image and download sections of the image based on model output.
-
-The aim is to support a wider range of models and flexible use of their outputs. One such example is a two stage CNN described [here](https://arxiv.org/pdf/1803.04054.pdf). Currently, caMicroscope supports single stage networks showing results directly, but no provision to use those results in any other model. 
-
-**Current Status:** Currently, caMicroscope supports uses of multiple types of models for markup, implemented with TensorFlow.js. Likewise, download of areas in an image given a bounding box is also supported.
-
-**Required Skills:** JavaScript, TensorFlow.js (recommended)
-
-**Code Challenge:** Using a machine learning toolkit of your choice, create a tool which identifies objects in the image, then returns positions in pixels corresponding to bounding boxes of a user-selected class of object in the image. For example, given an image with both cats and dogs, return bounding boxes for only cats.
-
-**Source Code:** https://github.com/caMicroscope/caMicroscope 
-
-**Slack Room:** interest-extraction 
-
-***
-
-**[2] Pathology Algorithm Development Workbench**
-
-**NOTE** This project was run in 2020. There may or may not be follow-up work. Please stay tuned.
-
-**Mentors:**  Nan Li and Ryan Birmingham 
-
-**Overview:** 
-
-This project aims to allow users to create and train machine learning models entirely within caMicroscope. Since deployments in caMicroscope often have a large number of images with labeled patches or features, this already-labeled data could be used to train an algorithm. To complete this new proposed workflow, the addition of two user experience elements would be needed. The first to allow a user to create the architecture of an algorithm, and the second to let a user select training data. It would be expected that this would work entirely within the browser, but use of additional microservices can be used if deemed necessary. 
-
-**Current Status:** Currently, many components of the proposed workflow exist, including multiple methods of image labeling, the ability to get small portions of a whole slide image, and the ability to test and inspect a trained model on portions of an image. These are currently distinct applications on the toolbar, and don’t directly work together.
-
-**Required Skills:** JavaScript, HTML, CSS, TensorFlow.js
-
-**Code Challenge:** Create a webpage for a model using tensorflow js layers with at least one layer that a user can choose. This tool should use the model.fit command to train based upon the user’s layer selection in the browser. This is a proof of concept, so performance of the specific model is not important. The [guide on migrating from keras to tfjs](https://www.tensorflow.org/js/guide/layers_for_keras_users) may be a useful resource.
-
-**Source Code:** https://github.com/caMicroscope/caMicroscope 
-
-**Slack Room:** dev-workbench 
-
-***
-
-**[3] Machine Learning Smartpens**
+**[1] Machine Learning Smartpens**
 
 **Mentors:**  Ryan Birmingham
 
@@ -77,13 +28,11 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope
 
-**Slack Room:** smartpens
-
 ***
 
-**[4] Cross-Slide Coordinated Viewing**
+**[2] Cross-Slide Coordinated Viewing**
 
-**Mentors:**  Ryan Birmingham and Insiyah Hajoori
+**Mentors:**  Nan Li
 
 **Overview:** 
 
@@ -97,28 +46,6 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 **Code Challenge:** Link user interaction across two OpenSeadragon instances if a checkbox is checked, otherwise, let them move independently.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
-
-**Slack Room:** coordinated-view
-
-***
-
-**[5] Real-time DICOM Metadata Extractor**
-
-**Mentors:**  Pradeeban Kathiravelu
-
-**Overview:** 
-
-[DICOM](https://www.dicomstandard.org/) is a common standard used to store and transfer medical images. In this project, the student will design and develop a real-time metadata extractor for DICOM images. The student may start from a metadata extractor from the set of DICOM images, and store the extracted metadata in a database (such as MongoDB). The metadata extractor should extract a set of attributes given by the user. In the latter phase, the student will extend the project to extract metadata from the images received real-time, by tracking the already extracted images. The tracking allows student to process metadata of only the new images, avoiding repeated processing. Additionally, the student may build APIs to support workflow executions on recently received DICOM data.
-
-**Current Status:** We have built a Python-based prototype. However, we expect this project to be built in Java, and from the scratch, to avoid limiting the creativity of the student.
-
-**Required Skills:** Java
-
-**Code Challenge:** Create a simple Java program that can read DICOM metadata. Feel free to use existing libraries and modules. However, please cite the original sources if you borrow code online.
-
-**Source Code:** New project. 
-
-**Slack Room:** dicom-extract
 
 ***
 
