@@ -79,7 +79,7 @@ Summarize the project in your own words.
 
 **8) Project Schedule**
 
-Break the timeline into periods of 3 – 4 days
+Break the timeline into periods of approximately 7 days
 
 **8.1) Community Bonding Period**
 
@@ -89,7 +89,7 @@ Break the timeline into periods of 3 – 4 days
 
 **9) Planned GSoC work hours**
 
-GSoC is expected to be a full time job, with 35 hours or more a week of contribution. Please indicate the work hours (including the timezone), that you hope to work on your project. 
+GSoC students are expected to contribute an average of 18 hours per week. Please indicate the work hours (including the timezone), that you hope to work on your project. 
 
 **10) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
