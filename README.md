@@ -24,7 +24,7 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 **Required Skills:** Websockets, JavaScript, OpenSeadragon, 
 
-**Code Challenge:** Link user interaction across two OpenSeadragon instances if a checkbox is checked, otherwise, let them move independently.
+**Code Challenge:** A simple text chat app using websockets.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
@@ -36,7 +36,7 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 **Overview:** 
 
-This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. Specific UI flow is up to the implementer; perhaps it's more useful to leave drawings alone, but have a button which snaps drawings to the nearest edge when pushed.
+This project would involve 
 
 **Current Status:** The current annotation tools perform point simplification after a user finishes drawing without any consideration of the base image.
 
@@ -64,6 +64,24 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 **Code Challenge:** Link user interaction across two OpenSeadragon instances if a checkbox is checked, otherwise, let them move independently.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
+
+***
+
+**[4] Data Product User Experience**
+
+**Primary Mentor:**  Ryan Birmingham
+
+**Overview:** 
+
+Currently, the main paradigm of caMicroscope is the slide. However, some scientists are more interested in other kinds of data products, such as annotations, heatmaps, patches, and so on. This project would involve improving the user experience for workflows focused first and foremost on data products, import and export, and summary views.
+
+**Current Status:** UI for slides exists, but can be expanded to other datatypes.
+
+**Required Skills:** UX design, JavaScript, HTML
+
+**Code Challenge:** Create a demo table which toggles grouping by a particular field.
+
+**Source Code:** https://github.com/caMicroscope/caMicroscope
 
 ***
 
