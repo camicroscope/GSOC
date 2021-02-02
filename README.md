@@ -36,7 +36,7 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 **Overview:** 
 
-This project would involve 
+This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. Specific UI flow is up to the implementer; perhaps it's more useful to leave drawings alone, but have a button which snaps drawings to the nearest edge when pushed.
 
 **Current Status:** The current annotation tools perform point simplification after a user finishes drawing without any consideration of the base image.
 
