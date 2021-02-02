@@ -32,7 +32,7 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 **[2] Machine Learning Smartpens**
 
-**Primary Mentor:**  Ryan Birmingham
+**Primary Mentor:**  Insiyah Hajoori and/or Ryan Birmingham
 
 **Overview:** 
 
