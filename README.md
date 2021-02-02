@@ -12,9 +12,27 @@ The following ideas were created with feedback from contributors and collaborato
 
 ***
 
-**[1] Machine Learning Smartpens**
+**[1] Real-time Collaborative Pathology**
 
-**Mentors:**  Ryan Birmingham
+**Primary Mentor:**  Akhil Rana
+
+**Overview:** 
+
+A fundamental use case of caMicroscope is collaboration between different pathologists. This has been done in steps, where one scientist annotates and image, then shares a reference to their work for validation. However, it can be useful to work together in real time on a single slide to assist with training and research. This kind of fast collaboration is traditionally done by having different people share a screen, but this is made more difficult as remote work becomes more prevalant. To this end, we propose use of a simple server to relay events from users to each other. This project would involve some amount of decisions and design of relevant UX added to accomplish this.
+
+**Current Status:** Deep hibernation: earlier beta/proof of concepts left over from years ago.
+
+**Required Skills:** Websockets, JavaScript, OpenSeadragon, 
+
+**Code Challenge:** Link user interaction across two OpenSeadragon instances if a checkbox is checked, otherwise, let them move independently.
+
+**Source Code:** https://github.com/caMicroscope/caMicroscope 
+
+***
+
+**[2] Machine Learning Smartpens**
+
+**Primary Mentor:**  Ryan Birmingham
 
 **Overview:** 
 
@@ -30,9 +48,9 @@ This project would involve adapting pathology annotation tools to prefer followi
 
 ***
 
-**[2] Cross-Slide Coordinated Viewing**
+**[3] Cross-Slide Coordinated Viewing**
 
-**Mentors:**  Nan Li
+**Primary Mentor:**  Nan Li
 
 **Overview:** 
 
@@ -48,6 +66,7 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
 ***
+
 
 # Application Template
 
