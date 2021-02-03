@@ -85,6 +85,23 @@ Currently, the main paradigm of caMicroscope is the slide. However, some scienti
 
 ***
 
+**[5] Caching Slow DB Results on Backend**
+
+**Primary Mentor:**  Ryan Birmingham
+
+**Overview:** 
+
+Some operations performed on the mongo database are slow, especially collecting distinct forms of metadata given a collection of results. Since new forms of results aren't introduced particularly often, it may be useful to allow the application to run an API call against cached results first, before making the slower call. Note specifically that the list of annotation layers has taken on the order of 10 seconds if a large number of segmentations are loaded, so this would have an appreciable positive impact on app performance.
+
+**Current Status:** New Feature of existing backend server.
+
+**Required Skills:** JavaScript, Caching
+
+**Code Challenge:** Make a simple API which caches its results without using cache calls from an existing library.
+
+**Source Code:** https://github.com/caMicroscope/caracal
+
+***
 
 # Application Template
 
