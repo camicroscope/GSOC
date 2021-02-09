@@ -87,7 +87,7 @@ Currently, the main paradigm of caMicroscope is the slide. However, some scienti
 
 **[5] Role Based Authentication**
 
-**Primary Mentor:**  Ryan Birmingham
+**Primary Mentor:**  Ryan Birmingham and/or Erich Bremer
 
 **Overview:** 
 
