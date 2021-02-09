@@ -85,7 +85,25 @@ Currently, the main paradigm of caMicroscope is the slide. However, some scienti
 
 ***
 
-**[5] Caching Slow DB Results on Backend**
+**[5] Role Based Authentication**
+
+**Primary Mentor:**  Ryan Birmingham
+
+**Overview:** 
+
+Currently, caMicroscope has a attribute based access control system for slides, which we describe as "filters". However, this does not map cleanly onto the way that users conceptualize authentication. Instead, we propose role based authentication on not only slides, but on all data products. A primary concern would be to minimize or eliminate any performance hit associated with adding this feature.
+
+**Current Status:** New Feature of existing backend server.
+
+**Required Skills:** JavaScript, Security
+
+**Code Challenge:** Make a simple API which returns a list of items using RBAC to only return ones a particular user is allowed to see. For simplicity, we recommend using a url parameter to identify a user without worrying about security for this challenge.
+
+**Source Code:** https://github.com/caMicroscope/caracal
+
+***
+
+**[6] Caching Slow DB Results on Backend**
 
 **Primary Mentor:**  Ryan Birmingham
 
