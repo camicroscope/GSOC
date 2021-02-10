@@ -122,15 +122,15 @@ Some operations performed on the mongo database are slow, especially collecting 
 ***
 # Applying for GSOC
 
-Google Summer of Code is a competetive program, as many more qualified and motivated students apply than there are project openings. As a result, applications need to stand out. Mentors and evaluators usually look for:
-* The proposal itself is clear, relevant, and can reasonably be accomplished in the given timeframe.
+Mentors and evaluators usually look for:
+* The proposal itself is clear relevant, and realistic.
 * The student has demonstrated that they have the relevant skills to complete the proposal.
-* The student has shown an interest in open source, especially caMicroscope. This goes beyond code, and includes community involvement.
-* Code Challenges and/or other relevant demonstrations go above and beyond in some interesting way.
+* The student has shown an interest in open source, especially caMicroscope. This includes community involvement.
+* Code Challenges and other relevant demonstrations go above and beyond in some interesting way.
 
 ## Application Template
 
-The following Template is provided to help cleary organize all required information for a successful GSOC application. While following this template itself is not required, please be sure that your application is complete.
+The following Template is provided to help organize all required information for a successful GSOC application. While following this template is not required, please be sure that your application is complete.
 
 **1) Project Title:**
 
@@ -146,7 +146,7 @@ Summarize the project in your own words.
 
 **6) Personal Background (Brief CV)**
 
-**7) Project Goals / Major Contributions**
+**7) Project Goals**
 
 (Enter as bullets)
 
@@ -160,19 +160,13 @@ Summarize the project in your own words.
 
 Break the timeline into periods of approximately 7 days
 
-**8.1) Community Bonding Period**
-
-**8.2) Development Phase**
-
-**8.3) Project Completion, testing, and documentation**
-
 **9) Planned GSoC work hours**
 
-GSoC students are expected to contribute an average of 18 hours per week. Please indicate the work hours (including the timezone), that you hope to work on your project. 
+Please indicate the work hours (including the timezone), that you hope to work on your project. 
 
 **10) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
-Please indicate if you have any lectures/classes, examinations, or other personal commitments. 
+Indicate any examinations or other personal commitments. 
 
 **11) Skill Set**
 
