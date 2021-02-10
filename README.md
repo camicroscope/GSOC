@@ -109,7 +109,7 @@ Currently, caMicroscope has a attribute based access control system for slides, 
 
 **Overview:** 
 
-Some operations performed on the mongo database are slow, especially collecting distinct forms of metadata given a collection of results. Since new forms of results aren't introduced particularly often, it may be useful to allow the application to run an API call against cached results first, before making the slower call. Note specifically that the list of annotation layers has taken on the order of 10 seconds if a large number of segmentations are loaded, so this would have an appreciable positive impact on app performance.
+Some operations performed on the mongo database are slow, especially collecting distinct forms of metadata given a collection of results. Since new forms of results aren't introduced particularly often, it may be useful to allow the application to run an API call against cached results first, before making the slower call. Note specifically that the list of annotation layers has taken on the order of 10 seconds if a large number of segmentations are loaded, so this would have an appreciable impact on app performance.
 
 **Current Status:** New Feature of existing backend server.
 
@@ -120,10 +120,17 @@ Some operations performed on the mongo database are slow, especially collecting 
 **Source Code:** https://github.com/caMicroscope/caracal
 
 ***
+# Applying for GSOC
 
-# Application Template
+Google Summer of Code is a competetive program, as many more qualified and motivated students apply than there are project openings. As a result, applications need to stand out. Mentors and evaluators usually look for:
+* The proposal itself is clear, relevant, and can reasonably be accomplished in the given timeframe.
+* The student has demonstrated that they have the relevant skills to complete the proposal.
+* The student has shown an interest in open source, especially caMicroscope. This goes beyond code, and includes community involvement.
+* Code Challenges and/or other relevant demonstrations go above and beyond in some interesting way.
 
-The students are encouraged to follow this template. However, they are not expected to strictly follow this template. They are rather advised to clearly include all the requested information in their application.
+## Application Template
+
+The following Template is provided to help cleary organize all required information for a successful GSOC application. While following this template itself is not required, please be sure that your application is complete.
 
 **1) Project Title:**
 
