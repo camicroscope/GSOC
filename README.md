@@ -22,9 +22,9 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 **Current Status:** Deep hibernation: earlier beta/proof of concepts left over from years ago.
 
-**Required Skills:** Websockets, JavaScript, OpenSeadragon, 
+**Required Skills:** Websockets (or similar), JavaScript, OpenSeadragon, 
 
-**Code Challenge:** A simple text chat app using websockets.
+**Code Challenge:** A simple text chat app using websockets or a similar protocol.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
