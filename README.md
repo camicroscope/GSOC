@@ -33,17 +33,17 @@ A fundamental use case of caMicroscope is collaboration between different pathol
 
 ***
 
-**[2] Machine Learning Smartpens**
+**[2] Pathology Smartpens**
 
 **Primary Mentor:**  Insiyah Hajoori and/or Nan Li
 
 **Overview:** 
 
-This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This would also involve expanding the user functions surrounding annotation, such as moving points in the drawing. Specific UI flow is up to the implementer; perhaps it's more useful to leave drawings alone, but have a button which snaps drawings to the nearest edge when pushed.
+This project would involve adapting pathology annotation tools to prefer following edges in the base image when close. This task could be implemented using machine learning, computer vision, or a mix of the two. In order to use the tool effectively, this would involve expanding the user functions surrounding annotation, such as moving points in the drawing. Specific UI flow is up to the implementer; perhaps it's more useful to leave drawings alone, but have a button which snaps drawings to the nearest edge when pushed.
 
 **Current Status:** The current annotation tools perform point simplification after a user finishes drawing without any consideration of the base image.
 
-**Required Skills:** JavaScript, tensorFlow.js
+**Required Skills:** JavaScript, tensorFlow.js, computer vision
 
 **Code Challenge:** Create a page or tool which performs edge detection on a given image and, given a point, returns the distance from that point to the closest edge.
 
