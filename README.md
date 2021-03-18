@@ -139,6 +139,24 @@ The custom/HTT branch of caMicroscope is special instance of caMicroscope that i
 
 **Source Code:** https://github.com/camicroscope/caMicroscope/tree/custom/HTT
 
+***
+
+**[8] Integrate an optical microscope with a camera and motorized stage**
+
+**Mentors:** Nan Li and Brandon Gallas
+
+**Overview:**
+The FDA has created eeDAP, an evaluation environment for digital and analog pathology. eeDAP is a software and hardware platform for designing and executing digital and analog pathology studies where evaluation regions of interest (ROIs) in the digital image are registered to the real-time view on the microscope. This registration allows for the reduction or elimination of a large source of variability in comparing these modalities in the hands of the pathologist: the field of view (the tissue) being evaluated. There are many other research and commercial use cases for eeDAP. eeDAP is written in Matlab, which is commercial software that requires a license and is not designed for digital pathology image viewing and annotation. We would like to move the eeDAP features into caMicroscope. The user will be able to control a digital camera and an x-y programmable microscope stage, with caMicroscope. 
+
+**Current Status:** New
+
+**Required Skills:** JavaScript, Hardware Communication and Control
+
+**Code Challenge:** View the image from a USB camera in caMicroscope and communicate to a motorized stage through a serial port (RS-232). We will use an inexpensive surrogate device in place of the motorized stage for early development.
+
+**Source Code:** https://github.com/camicroscope/caMicroscope/tree/custom/HTT
+
+***
 # Applying for GSOC
 
 Mentors and evaluators usually look for:
