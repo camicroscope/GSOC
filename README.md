@@ -124,7 +124,7 @@ Some operations performed on the mongo database are slow, especially collecting 
 
 ***
 
-**[7] Modularize the current code base for quick and easy workflow / task customization**
+**[7] Modularize the current code base for quick and easy workflow / task customization - Collaboration with FDA**
 
 **Mentors:** Nan Li and Brandon Gallas
 
@@ -141,7 +141,7 @@ The custom/HTT branch of caMicroscope is special instance of caMicroscope that i
 
 ***
 
-**[8] Integrate an optical microscope with a camera and motorized stage**
+**[8] Integrate an optical microscope with a camera and motorized stage - Collaboration with FDA**
 
 **Mentors:** Nan Li and Brandon Gallas
 
