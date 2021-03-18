@@ -153,7 +153,7 @@ It may or may not be useful to consider use of custom tile sources in openseadra
 
 **Required Skills:** JavaScript, Hardware Communication and Control
 
-**Code Challenge:** View the image from a USB camera in caMicroscope and communicate to a motorized stage through a serial port (RS-232). We will use an inexpensive surrogate device in place of the motorized stage for early development.
+**Code Challenge:** Create a webservice which emulates a motorized camera: taking in the x position, y position, zoom, logging which motor actions would be needed to move the slide to this new position, and return some image. 
 
 **Source Code:** https://github.com/camicroscope/caMicroscope
 
