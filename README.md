@@ -135,7 +135,7 @@ The custom/HTT branch of caMicroscope is special instance of caMicroscope that i
 
 **Required Skills:** JavaScript
 
-**Code Challenge*:** Extract the current task from code base and write as a unique module called by the code base
+**Code Challenge:** Extract the current task from code base and write as a unique module called by the code base
 
 **Source Code:** https://github.com/camicroscope/caMicroscope/tree/custom/HTT
 
