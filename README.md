@@ -128,7 +128,7 @@ Some operations performed on the mongo database are slow, especially collecting 
 
 **Mentors:** Nan Li and Brandon Gallas
 
-**Overview**
+**Overview:**
 The custom/HTT branch of caMicroscope is special instance of caMicroscope that is being used in an FDA project to collect validation data. After a pathologist logs on, he or she selects a batch and then an image within a batch to begin their evaluations. The evaluation task is collected with specific controls: buttons, scroll bars, numeric input. We would like to control the order the pathologists evaluate the batches and individual images with a “work list”. This work list will specify the task for each element to be completed. The tasks will be defined in modular pieces of code, allowing external investigators to modify old tasks and add new tasks, such as a comparative task that requires pathologists to view two images side-by-side.
 
 **Current Status:** New
