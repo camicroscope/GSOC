@@ -76,13 +76,13 @@ This project focuses on creating a tool to allow a user to do this. The two diff
 
 **Overview:** 
 
-Currently, the main paradigm of caMicroscope is the slide. However, some scientists are more interested in other kinds of data products, such as annotations, heatmaps, patches, and so on. This project would involve improving the user experience for workflows focused first and foremost on data products, import and export, and summary views.
+Currently, the main paradigm of caMicroscope is the slide. However, some scientists are more interested in other kinds of data products, such as annotations, heatmaps, patches, and so on. As a result, we aim to make loading and downloading these results easier. This project would involve a batch loader for results of different kinds so that working with these results is as painless as possible to the user.
 
-**Current Status:** UI for slides exists, but can be expanded to other datatypes.
+**Current Status:** UI for slides exists, but can be expanded to other datatypes. Loaders exist for other datatypes as scripts.
 
 **Required Skills:** UX design, JavaScript, HTML
 
-**Code Challenge:** Create a demo table which toggles grouping by a particular field.
+**Code Challenge:** Create a demo table which toggles grouping of data by a particular field.
 
 **Source Code:** https://github.com/caMicroscope/caMicroscope
 
