@@ -194,19 +194,23 @@ Summarize the project in your own words.
      
 ..
 
-**8) Project Schedule**
+**8) Detailed Project Proposal**
+
+Describe what you propose to do for the project.
+
+**9) Project Schedule**
 
 Break the timeline into periods of approximately 7 days
 
-**9) Planned GSoC work hours**
+**10) Planned GSoC work hours**
 
 Please indicate the work hours (including the timezone), that you hope to work on your project. 
 
-**10) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
+**11) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
 Indicate any examinations or other personal commitments. 
 
-**11) Skill Set**
+**12) Skill Set**
 
 Your relevant skill set to complete this project. Include pointers to bug fixes, demos, and previous work.
 
