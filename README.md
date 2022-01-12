@@ -1,4 +1,4 @@
-# caMicroscope GSoC 20212
+# caMicroscope GSoC 2022
 <img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
 
 For 2022, the scope of GSOC projects have changed. Since the projects will be shorter, the camicroscope community will be able to focus on a mix of small and large projects. We look forward to sharing our thoughts going forward, and thank you for your patience.
@@ -17,7 +17,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **[1] Use Web Components**
 
-**Primary Mentor:**  ?
+**Primary Mentor:**  Akhil Rana
 
 **Overview:** caMicroscope is written in javascript without the use of any frameworks. This has the benefit of making the code directly usable by browsers without transpilation, but has the side effect of making code less regular. We propose using something such as [Web Components](https://www.w3.org/TR/components-intro/) to make the caMicroscope viewer code more regular. This project may not include a complete refactor of caMicroscope, so good proposals would take into account which components to target.
 
@@ -64,6 +64,22 @@ The following ideas were created with feedback from contributors and collaborato
 **Code Challenge:** TBA
 
 **Source Code:** https://github.com/camicroscope/caMicroscope
+
+***
+
+**[4] Desktop and/or Mobile caMicroscope**
+
+**Primary Mentor:**  Nan Li
+
+**Overview:** Since biomedical datasets and research motivation comes in different scales, it’s important that there exist tooling setups to fit these different needs. While in many situations, collaborative online research is helpful, we aim to provide visualization and analysis tools to individual users as well. This project aims to create either a desktop or mobile standalone version of caMicroscope, following "Nanoborb", the previous iteration of this concept.
+
+**Current Status:** Existing Project: Refactor or Recreation
+
+**Required Skills:** JavaScript, Likely Python and/or Java, HTML
+
+**Code Challenge:** Create an electron-based (or other web ui framework for python or java) application with persistent data storage.
+
+**Source Code:** https://github.com/camicroscope/nanoborb
 
 ***
 
