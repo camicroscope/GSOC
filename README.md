@@ -61,7 +61,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Required Skills:** JavaScript, HTML
 
-**Code Challenge:** TBA
+**Code Challenge:** Create a basic CRUD app, such as a shopping list.
 
 **Source Code:** https://github.com/camicroscope/caMicroscope
 
@@ -80,6 +80,22 @@ The following ideas were created with feedback from contributors and collaborato
 **Code Challenge:** Create an electron-based (or other web ui framework for python or java) application with persistent data storage.
 
 **Source Code:** https://github.com/camicroscope/nanoborb
+
+***
+
+**[5] Pathology Game**
+
+**Primary Mentor:**  Ryan Birmingham
+
+**Overview:** caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model game. This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be fun or an informal training exercise for pathologists.
+
+**Current Status:** New App
+
+**Required Skills:** JavaScript, TensorFlow
+
+**Code Challenge:** Make a clone/mvp of a game similar to geoguessr.
+
+**Source Code:** https://github.com/camicroscope/camicroscope
 
 ***
 
