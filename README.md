@@ -28,6 +28,8 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Code Challenge:** A simple webapp demonstrating WebComponents.
 
+**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+
 **Source Code:** https://github.com/caMicroscope/caMicroscope 
 
 ***
@@ -46,6 +48,8 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Code Challenge:** Create a website which displays the values of [standard tiff tags](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) for a user-selected tiff image.
 
+**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+
 **Source Code:** https://github.com/camicroscope/iipimage (and likely a new repository for this project)
 
 ***
@@ -63,6 +67,8 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Code Challenge:** Create a basic CRUD app, such as a shopping list.
 
+**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+
 **Source Code:** https://github.com/camicroscope/caMicroscope
 
 ***
@@ -78,6 +84,8 @@ The following ideas were created with feedback from contributors and collaborato
 **Required Skills:** JavaScript, Likely Python and/or Java, HTML
 
 **Code Challenge:** Create an electron-based (or other web ui framework for python or java) application with persistent data storage.
+
+**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
 
 **Source Code:** https://github.com/camicroscope/nanoborb
 
@@ -95,7 +103,28 @@ The following ideas were created with feedback from contributors and collaborato
 
 **Code Challenge:** Make a clone/mvp of a game similar to geoguessr.
 
+**Project Size:** Long (350 Hour)
+
 **Source Code:** https://github.com/camicroscope/camicroscope
+
+***
+
+
+**[6] Role-Based Access Control Deployment Option**
+
+**Primary Mentor:**  Yash Kumar Verma
+
+**Overview:** In previous years, components for role based access control for caMicroscope have been developed. This task would focus on creating deployment configuration for caMicroscope to use these tools in production. This will likely also include some touch-up, additional functions, and documentation for the RBAC components.
+
+**Current Status:** Components Exist
+
+**Required Skills:** JavaScript, Docker/Kubernetes
+
+**Code Challenge:** Docker Compose or Kubernetes Deployment of a series of services.
+
+**Project Size:** Long (350 Hour)
+
+**Source Code:** https://github.com/camicroscope/distro, https://github.com/camicroscope/rbac-admin
 
 ***
 
