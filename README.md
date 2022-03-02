@@ -10,7 +10,7 @@ We intend to use Slack as the primary medium of communication. The slack room at
 Code Challenges submissions should demonstrate creativity, understanding of the project, and ability to execute on a project proposal. Submit code challenges for early review and feedback here: [caMicroscope | GSOC 2021 | code challenge submission](https://forms.gle/k4ZcH75UYG4y2tRJ7) 
  
 # List of Ideas
-The following ideas were created with feedback from contributors and collaborators. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
+The following ideas were created with feedback from contributors and collaborators. Project ideas are not listed in any particular oder. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
 ** More ideas are upcoming **
 
 ***
