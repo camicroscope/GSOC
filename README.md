@@ -129,6 +129,56 @@ The following ideas were created with feedback from contributors and collaborato
 ***
 
 ***
+
+
+**[7] Improving on the real-time collaboration system**
+
+**Primary Mentor:**  Vedant Nandoskar
+
+**Overview:** In last year's GSOC season, we had built a real-time collaboration system  for caMicroscope allowing for remote users to work simultaneously on slides. Most features are based on websockets. Currently, the system supports the following features:
+
+- Real-time two-way data communication of activity on slides.
+- Security mechanism to the communication channels.
+- Role based management of the communication channels.
+- Private and Public channels.
+- In-app group messaging.
+- Integrated Video/Voice calling.
+
+As extensive as the system is, it still needs refinements in terms of:
+
+1. Handling socket communication 
+2. A soft commit feature
+3. Multiple collaboration rooms on a slide
+
+&nbsp;
+1. **Handling socket communication**
+This would consist in optimising the way socket data is handled, transmitted and received before being rendered on the UI. Shortening/compression could also be integrated to allow for lesser network load.
+
+2. **Soft commit feature**
+The soft commit feature would allow for users to work on a slide without saving changes to the database. Something of the sort of a non-persistent datastore. The data in this store would only be saved in the database once the user clicks a 'commit' button. This is important so that the commits from multiple rooms on the same slide do not conflict or overwrite each other.
+
+2. **Multiple collaboration rooms on a slide**
+This feature consists in extending the existing collaboration rooms to share the same slide alongwith having a soft commit feature as described above.
+
+**Current Status:** Real time collaboration system is in place.
+
+**Required Skills:** JavaScript, Websockets, data handling, compression.
+
+**Code Challenge:** Create a simple text editor allowing multiple users to edit the file. This text editor need not have formatting options, a simple texfield would do too. Integrate a simple soft commit feature with multiple collaboration rooms with it. Try to keep it simple without using JS frameworks, simple HTML, CSS, and JS would do.
+
+Libraries you could use: 
+- [https://socket.io/](Socket.io/) - for websockets implementation in JS.
+- [https://ckeditor.com/](CKeditor) - (optional) for a readymade text editor.
+**Project Size:** Long (350 Hour)
+
+**Source Code:** 
+- [Camicroscope](https://github.com/camicroscope/caMicroscope/tree/realtime)
+- [Caracal](https://github.com/camicroscope/Caracal/tree/realtime)
+- [Distro](https://github.com/camicroscope/Distro/tree/realtime)
+***
+
+&nbsp;
+***
 # Applying for GSOC
 
 Mentors and evaluators usually look for:
