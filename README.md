@@ -15,167 +15,20 @@ The following ideas were created with feedback from contributors and collaborato
 
 ***
 
-**[1] Use Web Components**
+**[1] Machine Learning Assistant**
 
-**Primary Mentor:**  Akhil Rana
+**[2] Dicom Support**
 
-**Overview:** caMicroscope is written in javascript without the use of any frameworks. This has the benefit of making the code directly usable by browsers without transpilation, but has the side effect of making code less regular. We propose using something such as [Web Components](https://www.w3.org/TR/components-intro/) to make the caMicroscope viewer code more regular. This project may not include a complete refactor of caMicroscope, so good proposals would take into account which components to target.
+**[3] Multi-channel Imaging Support**
 
+**[4] Collection and Study Managment**
 
-**Current Status:** New Project
+**[5] Modularization of Components**
 
-**Required Skills:** JavaScript, HTML, WebComponents
+**[6] Eaglescope Automatic Configuration**
 
-**Code Challenge:** A simple webapp demonstrating WebComponents.
+**[7] Eaglescope/caMicroscope Integration**
 
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
-
-**Source Code:** https://github.com/caMicroscope/caMicroscope 
-
-***
-
-**[2] Client Driven Slide Tiling**
-
-**Primary Mentor:**  Ryan Birmingham
-
-**Overview:** The Cancer Whole Slide images that caMicroscope users interact with come in a variety of formats, but most of these are organized very similarly to the tiff format. As a result, we believe that we can write an image viewer or tile server for at least one such format entirely in the browser. There are multiple ways which this sort of task may be completed, including transpiling an existing library (Openslide or Bioformats) to javascript, or writing something entirely new.
-
-
-
-**Current Status:** Some underdeveloped proof of concepts exist
-
-**Required Skills:** JavaScript, C, Java, and/or Python
-
-**Code Challenge:** Create a website which displays the values of [standard tiff tags](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) for a user-selected tiff image.
-
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
-
-**Source Code:** https://github.com/camicroscope/iipimage (and likely a new repository for this project)
-
-***
-
-
-**[3] Administrative Functions Portal**
-
-**Primary Mentor:**  Nan Li
-
-**Overview:** caMicroscope is usually configured in a hosted environment with some deployment-specific configuration. Currently, this is done through editing configuration files on the server which populate a database. It would be much more user friendly if all of these functions could be accomplished with a web UI alongside other viewer functions. This project would involve migrating as many administrative functions as possible to the web UI.
-
-**Current Status:** Work in Progress
-
-**Required Skills:** JavaScript, HTML
-
-**Code Challenge:** Create a basic CRUD app, such as a shopping list.
-
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
-
-**Source Code:** https://github.com/camicroscope/caMicroscope
-
-***
-
-**[4] Desktop and/or Mobile caMicroscope**
-
-**Primary Mentor:**  Nan Li
-
-**Overview:** Since biomedical datasets and research motivation comes in different scales, it’s important that there exist tooling setups to fit these different needs. While in many situations, collaborative online research is helpful, we aim to provide visualization and analysis tools to individual users as well. This project aims to create either a desktop or mobile standalone version of caMicroscope, following "Nanoborb", the previous iteration of this concept.
-
-**Current Status:** Existing Project: Refactor or Recreation
-
-**Required Skills:** JavaScript, Likely Python and/or Java, HTML
-
-**Code Challenge:** Create an electron-based (or other web ui framework for python or java) application with persistent data storage.
-
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
-
-**Source Code:** https://github.com/camicroscope/nanoborb
-
-***
-
-**[5] Pathology Game**
-
-**Primary Mentor:**  Ryan Birmingham
-
-**Overview:** caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model game. This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be fun or an informal training exercise for pathologists.
-
-**Current Status:** New App
-
-**Required Skills:** JavaScript, TensorFlow
-
-**Code Challenge:** Make a clone/mvp of a game similar to geoguessr.
-
-**Project Size:** Long (350 Hour)
-
-**Source Code:** https://github.com/camicroscope/camicroscope
-
-***
-
-
-**[6] Role-Based Access Control Deployment Option**
-
-**Primary Mentor:**  Yash Kumar Verma
-
-**Overview:** In previous years, components for role based access control for caMicroscope have been developed. This task would focus on creating deployment configuration for caMicroscope to use these tools in production. This will likely also include some touch-up, additional functions, and documentation for the RBAC components.
-
-**Current Status:** Components Exist
-
-**Required Skills:** JavaScript, Docker/Kubernetes
-
-**Code Challenge:** Docker Compose or Kubernetes Deployment of a series of services.
-
-**Project Size:** Long (350 Hour)
-
-**Source Code:** https://github.com/camicroscope/distro, https://github.com/camicroscope/rbac-admin
-
-***
-
-***
-
-
-**[7] Improving on the real-time collaboration system**
-
-**Primary Mentor:**  Vedant Nandoskar
-
-**Overview:** In last year's GSOC season, we had built a real-time collaboration system  for caMicroscope allowing for remote users to work simultaneously on slides. Most features are based on websockets. Currently, the system supports the following features:
-
-- Real-time two-way data communication of activity on slides.
-- Security mechanism to the communication channels.
-- Role based management of the communication channels.
-- Private and Public channels.
-- In-app group messaging.
-- Integrated Video/Voice calling.
-
-As extensive as the system is, it still needs refinements in terms of:
-
-1. Handling socket communication 
-2. A soft commit feature
-3. Multiple collaboration rooms on a slide
-
-&nbsp;
-1. **Handling socket communication**
-This would consist in optimising the way socket data is handled, transmitted and received before being rendered on the UI. Shortening/compression could also be integrated to allow for lesser network load.
-
-2. **Soft commit feature**
-The soft commit feature would allow for users to work on a slide without saving changes to the database. Something of the sort of a non-persistent datastore. The data in this store would only be saved in the database once the user clicks a 'commit' button. This is important so that the commits from multiple rooms on the same slide do not conflict or overwrite each other.
-
-2. **Multiple collaboration rooms on a slide**
-This feature consists in extending the existing collaboration rooms to share the same slide alongwith having a soft commit feature as described above.
-
-**Current Status:** Real time collaboration system is in place.
-
-**Required Skills:** JavaScript, Websockets, data handling, compression.
-
-**Code Challenge:** Create a simple text editor allowing multiple users to edit the file. This text editor need not have formatting options, a simple texfield would do too. Integrate a simple soft commit feature with multiple collaboration rooms with it. Try to keep it simple without using JS frameworks, simple HTML, CSS, and JS would do.
-
-Libraries you could use: 
-- [https://socket.io/](Socket.io/) - for websockets implementation in JS.
-- [https://ckeditor.com/](CKeditor) - (optional) for a readymade text editor.
-**Project Size:** Long (350 Hour)
-
-**Source Code:** 
-- [Camicroscope](https://github.com/camicroscope/caMicroscope/tree/realtime)
-- [Caracal](https://github.com/camicroscope/Caracal/tree/realtime)
-- [Distro](https://github.com/camicroscope/Distro/tree/realtime)
-***
 
 &nbsp;
 ***
