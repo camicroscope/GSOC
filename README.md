@@ -33,7 +33,7 @@ Code Challenge: Create a frontend web application which uses tensorflow-js to pr
 caMicroscope supports openslide compatible file types for its tiling engine. While many other formats are often requested to work without conversion, one of the most common suggestions that research groups and governmental organizations ask for is DICOM Whole Slide Imaging (See https://dicom.nema.org/dicom/dicomwsi/). This format follows the DICOM standards as are common in radiology, so this would help promote interdisciplinary research. This project would require creating an alternate tiling engine microservice which can efficiently serve regions of a slide from DICOM WSI format into either a simulated deepzoom image or the IIIF url pattern format (see https://iiif.io/).
 
 Difficulty: Medium
-Project Length: Short
+Project Length: Long
 
 Source Code: New Project. See https://github.com/camicroscope/iipimage for a similar project.
 
