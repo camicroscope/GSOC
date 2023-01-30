@@ -13,7 +13,7 @@ The following ideas were created with feedback from contributors and collaborato
 
 ***
 
-## **[1] Machine Learning Assistant**
+## **[1] Machine Learning Assistant
 
 Many user actions in pathology data collection are mostly independent. Annotation, classification, and user review are produced largely by an expert opinion without use of machine learning tools. To augment this workflow, caMicroscope has added some specific tools which can assist with or validate annotations and classifications. However, at this time the tools are separate enough to often be practically slower than not using them.
 This project, the Machine Learning Assistant, is to consider the needs of the user as well as the complexity to automatically and unobtrusively assist data collection by pathologists and other researchers. 
@@ -41,7 +41,7 @@ Primary Project Contact: Tony Pan
 
 Code Challenge: Create a microservice in a language/framework of your choice which can serve metadata about any DICOM file.
 
-## **[3] Multi-channel Imaging Support**
+## **[3] Multi-channel Imaging Support
 
 ## **[4] Collection and Study Management 
 
@@ -80,7 +80,7 @@ Code Challenge: A simple webapp demonstrating Web Components
 Eaglescope is a web application for exploratory analysis on high dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
 This project, Eaglescope Automatic Configuration, aims to provide instant statistical insight into which fields or combinations of fields can be best represented in the various different visualizations implemented in eaglescope. This would have the added bonus of letting a user quickly explore a new dataset without writing any configuration. This has been proposed as a short project, and would focus on classical statistical methods. 
 
-Difficulty: Difficult
+Difficulty: Medium
 Project Length: Short
 
 Primary Project Contact: Ryan Birmingham
@@ -90,7 +90,22 @@ Source Code: https://github.com/sharmalab/eaglescope
 Code Challenge: Create a web application which takes in a user-supplied file (e.g. csv) and uses SVD and/or dimensionality reduction to determine which feature(s) are most explanatory.
 
 
-## **[7] Eaglescope/caMicroscope Integration**
+## [7] Pathology Game
+
+Primary Mentor: Ryan Birmingham
+
+Overview: caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model game. If the model is trusted, this application should function as a way for a human to test their observation skills in pathology. Alternatively, if a model is unvalidated, this would work as a way to test the model.  Practically, this would involve creating at least one interactive way to numerically compare a human input with a machine learning model classification or segmentation.This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be fun or an informal training exercise for pathologists.
+
+Current Status: New App
+
+Required Skills: UX, JavaScript, TensorFlow
+
+Code Challenge: Make a clone/mvp of a game similar to geoguessr, focusing on the user interaction and scoring.
+
+Difficulty: Hard
+Project Length: Long
+
+Source Code: https://github.com/camicroscope/camicroscope
 
 
 &nbsp;
