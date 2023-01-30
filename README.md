@@ -87,8 +87,7 @@ Primary Project Contact: Ryan Birmingham
 
 Source Code: https://github.com/sharmalab/eaglescope
 
-Code Challenge: Create a web application which takes in a user-supplied file (e.g. csv) and determines which feature(s) are most explanatory.
-
+Code Challenge: Use eaglescope to visualize a dataset in a selection of different ways.
 
 ## [7] User Driven Pathology Validation
 
