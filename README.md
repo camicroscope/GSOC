@@ -43,9 +43,37 @@ Code Challenge: Create a microservice in a language/framework of your choice whi
 
 ## **[3] Multi-channel Imaging Support**
 
-## **[4] Collection and Study Managment**
+## **[4] Collection and Study Management 
 
-## **[5] Modularization of Components**
+Mentors: Nan Li 
+
+Overview: caMicroscope is a widely used open-source end-to-end platform for digital pathology. It helps researchers and pathologists host, manage, and annotate the whole slide imaging (WSI). The WSIs and annotations are the most important fundamental dataset in caMicroscope. As the slides and annotations grows, researchers and pathologists need to an efficient way to organize slides and annotations. Currently, caMicroscope use the concept of collection to manage slides. Each annotation is directly associated with its slide. It is hard for researchers and pathologists to divide a study by using collection since the different studies need researchers and pathologists focus on. For example, some studies might focus on make annotations on a series of slides. And some studies might focus on evaluation on series of annotations. We propose an implementation intended for refactoring and extending current collection management. Design a novel collection and study management to help reorganize slides and annotations to help users organize their studies. 
+
+Required Skill: Prior experience in Node.js, and mongoDB. Familiar with Javascript, HTML and CSS 
+
+Difficulty: Medium 
+
+Project Length: Long 
+
+Source Code: https://github.com/camicroscope/caMicroscope and https://github.com/camicroscope/Caracal 
+
+Code Challenge: Use object-oriented design to create a simple webapp which provides the operation to manipulate the collection in MongoDB. The code challenge should focus on developing the backend in REST APIs which uses Node.js to operate mongoDB and a simple frontend to proof the contributors understanding the basic architecture of web application. 
+
+## **[5] Modularization of Components 
+
+Mentors: Nan Li 
+
+Overview: caMicroscope is a web-based biomedical image and data viewer, with a strong emphasis on cancer pathology WSI (Whole Slide Imaging). Application is written in pure javascript, CSS and HTML and it makes developers and contributors easy to understand caMicroscope code base. However, the pure Javascript and CSS makes the code less regular and hard reuse by new features. It is increasing the development and maintenance problems. To keep caMicroscope become a robust and feasible application, the modularization design of frontend components should be involved. It will create a health and feasible fundamentals of caMicroscope development and maintenance. We propose to refactor and create a series of web components to help people who want to learn and use this project quickly creating a customized version to fit their demands.   
+
+Required Skill: Prior experience in Javascript, HTML, CSS and Bootstrap. Understand object-oriented design (OOD) 
+
+Difficulty: Medium 
+
+Project Length: Long 
+
+Source Code: https://github.com/camicroscope/caMicroscope 
+
+Code Challenge: A simple webapp demonstrating Web Components 
 
 ## **[6] Eaglescope Automatic Configuration**
 
