@@ -55,19 +55,21 @@ A significant amount of this project would be user experience focused, specifica
 
 **Primary Mentors:** Nan Li 
 
-**Overview:** 
+**Overview:** Most of the whole slide image data that we see are RGB images, representing the direct reading from an optical scanner on a tissue sample. This, combined with chemical stains on the image, provides a way to let experts assess an image based on inferences of relative color (e.g. H&E slide pink-purple ratio).
+Sometimes, the spatial data represented is not the direct RGB values from a scanner. In this case, we encode three values as RGB. However, caMicroscope does not support datasets which have a spatial representation for more than three channels.
+This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support.
 
-**Required Skill:** 
+**Required Skill:** Image Processing, User Experience
 
 **Difficulty:** Medium 
 
 **Project Length:** Long 
 
-**Source Code:** 
+**Source Code:** New Project
 
 **Primary Project Contact:** Nan Li
 
-**Code Challenge:**
+**Code Challenge:** Create a function which takes in numerical data as a csv with an arbitrary number of fields, and a selection of which three fields to assign to red, green, and blue, and returns an image.
 
 ## [4] Collection and Study Management 
 
