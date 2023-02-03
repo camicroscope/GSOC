@@ -1,181 +1,154 @@
-# caMicroscope GSoC 2022
+# caMicroscope GSoC 2023
 <img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
-
-For 2022, GSOC projects may be either full-time or half-time. Most project ideas could work in either format, albeit with different levels of scope. Contributors should specifically propose either a full-time or half-time project timeline, and adjust the scope accordingly. We look forward to sharing our thoughts going forward, and thank you for your patience.
 
 # Communicating with the mentors
 We intend to use Slack as the primary medium of communication. The slack room at camicroscope.slack.com is used to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
 
 # Code Challenges
-Code Challenges submissions should demonstrate creativity, understanding of the project, and ability to execute on a project proposal. Submit code challenges for early review and feedback here: [caMicroscope | GSOC 2021 | code challenge submission](https://forms.gle/k4ZcH75UYG4y2tRJ7) 
+Code Challenges submissions should demonstrate creativity, understanding of the project, and ability to execute on a project proposal. Submit code challenges for early review and feedback here: [caMicroscope | GSOC 2023 | code challenge submission](https://forms.gle/moA6QwPZLMhuKJXD6) 
  
 # List of Ideas
 The following ideas were created with feedback from contributors and collaborators. Project ideas are not listed in any particular order. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
-** More ideas are upcoming **
 
 ***
 
-**[1] Use Web Components**
+## [1] Machine Learning Training Assistant
 
-**Primary Mentor:**  Akhil Rana
+**Primary Mentors:** Tony Pan
 
-**Overview:** caMicroscope is written in javascript without the use of any frameworks. This has the benefit of making the code directly usable by browsers without transpilation, but has the side effect of making code less regular. We propose using something such as [Web Components](https://www.w3.org/TR/components-intro/) to make the caMicroscope viewer code more regular. This project may not include a complete refactor of caMicroscope, so good proposals would take into account which components to target.
+**Overview** Many user actions in pathology data collection are mostly independent. Annotation, classification, and user review are produced largely by an expert opinion without use of machine learning tools. To augment this workflow, caMicroscope has added some specific tools which can assist with or validate annotations and classifications. However, at this time use of the tools usually require a pretrained model in order to use. There is a workflow for creating labeled dataset images and training in caMicroscope, but it is difficult to use in practice.
+This project, the machine learning training assistant, would be both to consolidate and improve the user experience of the training workflow, as well as to find ways to improve performance and time taken for predictions.
+This project would likely involve adding a microservice to allow training to run on a server or third party platform based upon configuration.
+A significant amount of this project would be user experience focused, specifically finding ways to quickly provide insight using existing machine learning tools. To augment this, the project may include additional implementations, as well as runtime analysis to determine what information can be considered at a given time.
 
+**Required Skill:** 
 
-**Current Status:** New Project
+**Difficulty:** Hard
 
-**Required Skills:** JavaScript, HTML, WebComponents
+**Project Length:** Long
 
-**Code Challenge:** A simple webapp demonstrating WebComponents.
+**Primary Project Contact:** Tony Pan
 
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+**Source Code**: https://github.com/camicroscope/camicroscope and https://github.com/camicroscope/caracal
 
-**Source Code:** https://github.com/caMicroscope/caMicroscope 
+**Code Challenge:** Create a frontend web application which uses tensorflow-js to provide some form of analysis on a user-supplied image unobtrusively. This should function on multiple timescales as possible, so that some information can be displayed immediately, while other slower-running calculations can be returned on completion.
 
-***
+## [2] Dicom Support
 
-**[2] Client Driven Slide Tiling**
+**Primary Mentors:** Tony Pan 
 
-**Primary Mentor:**  Ryan Birmingham
+**Overview:** caMicroscope supports openslide compatible file types for its tiling engine. While many other formats are often requested to work without conversion, one of the most common suggestions that research groups and governmental organizations ask for is DICOM Whole Slide Imaging (See https://dicom.nema.org/dicom/dicomwsi/). This format follows the DICOM standards as are common in radiology, so this would help promote interdisciplinary research. This project would require creating an alternate tiling engine microservice which can efficiently serve regions of a slide from DICOM WSI format into either a simulated deepzoom image or the IIIF url pattern format (see https://iiif.io/).
 
-**Overview:** The Cancer Whole Slide images that caMicroscope users interact with come in a variety of formats, but most of these are organized very similarly to the tiff format. As a result, we believe that we can write an image viewer or tile server for at least one such format entirely in the browser. There are multiple ways which this sort of task may be completed, including transpiling an existing library (Openslide or Bioformats) to javascript, or writing something entirely new.
+**Required Skill:**
 
+**Difficulty:** Medium
 
+**Project Length:** Long
 
-**Current Status:** Some underdeveloped proof of concepts exist
+**Source Code:** New Project. See https://github.com/camicroscope/iipimage for a similar project.
 
-**Required Skills:** JavaScript, C, Java, and/or Python
+**Primary Project Contact:** Tony Pan
 
-**Code Challenge:** Create a website which displays the values of [standard tiff tags](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml) for a user-selected tiff image.
+**Code Challenge:** Create a microservice in a language/framework of your choice which can serve metadata about any DICOM file.
 
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+## [3] Multi-channel Imaging Support
 
-**Source Code:** https://github.com/camicroscope/iipimage (and likely a new repository for this project)
+**Primary Mentors:** Nan Li 
 
-***
+**Overview:** Most of the whole slide image data that we see are RGB images, representing the direct reading from an optical scanner on a tissue sample. This, combined with chemical stains on the image, provides a way to let experts assess an image based on inferences of relative color (e.g. H&E slide pink-purple ratio).
+Sometimes, the spatial data represented is not the direct RGB values from a scanner. In this case, we encode three values as RGB. However, caMicroscope does not support datasets which have a spatial representation for more than three channels.
+This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support.
 
+**Required Skill:** Image Processing, User Experience
 
-**[3] Administrative Functions Portal**
+**Difficulty:** Medium 
 
-**Primary Mentor:**  Nan Li
+**Project Length:** Long 
 
-**Overview:** caMicroscope is usually configured in a hosted environment with some deployment-specific configuration. Currently, this is done through editing configuration files on the server which populate a database. It would be much more user friendly if all of these functions could be accomplished with a web UI alongside other viewer functions. This project would involve migrating as many administrative functions as possible to the web UI.
+**Source Code:** New Project
 
-**Current Status:** Work in Progress
+**Primary Project Contact:** Nan Li
 
-**Required Skills:** JavaScript, HTML
+**Code Challenge:** Create a function which takes in numerical data as a csv with an arbitrary number of fields, and a selection of which three fields to assign to red, green, and blue, and returns an image.
 
-**Code Challenge:** Create a basic CRUD app, such as a shopping list.
+## [4] Collection and Study Management 
 
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+**Primary Mentors:** Nan Li 
 
-**Source Code:** https://github.com/camicroscope/caMicroscope
+**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. It helps researchers and pathologists host, manage, and annotate the whole slide imaging (WSI). The WSIs and annotations are the most important fundamental dataset in caMicroscope. As the slides and annotations grows, researchers and pathologists need to an efficient way to organize slides and annotations. Currently, caMicroscope use the concept of collection to manage slides. Each annotation is directly associated with its slide. It is hard for researchers and pathologists to divide a study by using collection since the different studies need researchers and pathologists focus on. For example, some studies might focus on make annotations on a series of slides. And some studies might focus on evaluation on series of annotations. We propose an implementation intended for refactoring and extending current collection management. Design a novel collection and study management to help reorganize slides and annotations to help users organize their studies. 
 
-***
+**Required Skill:** Prior experience in Node.js, and mongoDB. Familiar with Javascript, HTML and CSS 
 
-**[4] Desktop and/or Mobile caMicroscope**
+**Difficulty:** Medium 
 
-**Primary Mentor:**  Nan Li
+**Project Length:** Long 
 
-**Overview:** Since biomedical datasets and research motivation comes in different scales, it’s important that there exist tooling setups to fit these different needs. While in many situations, collaborative online research is helpful, we aim to provide visualization and analysis tools to individual users as well. This project aims to create either a desktop or mobile standalone version of caMicroscope, following "Nanoborb", the previous iteration of this concept.
+**Source Code:** https://github.com/camicroscope/caMicroscope and https://github.com/camicroscope/Caracal 
 
-**Current Status:** Existing Project: Refactor or Recreation
+**Primary Project Contact:** Nan Li
 
-**Required Skills:** JavaScript, Likely Python and/or Java, HTML
+**Code Challenge:** Use object-oriented design to create a simple webapp which provides the operation to manipulate the collection in MongoDB. The code challenge should focus on developing the backend in REST APIs which uses Node.js to operate mongoDB and a simple frontend to proof the contributors understanding the basic architecture of web application. 
 
-**Code Challenge:** Create an electron-based (or other web ui framework for python or java) application with persistent data storage.
+## [5] Modularization of Components 
 
-**Project Size:** Short (175 Hour) or Long (350 Hour) depending on proposal
+**Primary Mentors:** Nan Li 
 
-**Source Code:** https://github.com/camicroscope/nanoborb
+Overview: caMicroscope is a web-based biomedical image and data viewer, with a strong emphasis on cancer pathology WSI (Whole Slide Imaging). Application is written in pure javascript, CSS and HTML and it makes developers and contributors easy to understand caMicroscope code base. However, the pure Javascript and CSS makes the code less regular and hard reuse by new features. It is increasing the development and maintenance problems. To keep caMicroscope become a robust and feasible application, the modularization design of frontend components should be involved. It will create a health and feasible fundamentals of caMicroscope development and maintenance. We propose to refactor and create a series of web components to help people who want to learn and use this project quickly creating a customized version to fit their demands.   
 
-***
+**Required Skill:** Prior experience in Javascript, HTML, CSS and Bootstrap. Understand object-oriented design (OOD) 
 
-**[5] Pathology Game**
+**Difficulty:** Medium 
 
-**Primary Mentor:**  Ryan Birmingham
+**Project Length:** Long 
 
-**Overview:** caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model game. This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be fun or an informal training exercise for pathologists.
+**Source Code:** https://github.com/camicroscope/caMicroscope 
 
-**Current Status:** New App
+**Primary Project Contact:** Nan Li
 
-**Required Skills:** JavaScript, TensorFlow
+**Code Challenge:** A simple webapp demonstrating Web Components 
 
-**Code Challenge:** Make a clone/mvp of a game similar to geoguessr.
+## [6] Eaglescope Automatic Configuration
 
-**Project Size:** Long (350 Hour)
+**Primary Mentor:** Ryan Birmingham
+
+**Overview:** Eaglescope is a web application for exploratory analysis on high dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
+This project, Eaglescope Automatic Configuration, aims to provide instant statistical insight into which fields or combinations of fields can be best represented in the various different visualizations implemented in eaglescope. This would have the added bonus of letting a user quickly explore a new dataset without writing any configuration. This has been proposed as a short project, and would focus on classical statistical methods. 
+
+**Current Status:** New frontend application
+
+**Required Skills:** UX, JavaScript, TensorFlow
+
+**Difficulty:** Medium
+
+**Project Length:** Short
+
+**Source Code:** https://github.com/sharmalab/eaglescope
+
+**Primary Project Contact:** Ryan Birmingham
+
+**Code Challenge:** Use eaglescope to visualize a dataset in a selection of different ways.
+
+## [7] User Driven Pathology Validation
+
+**Primary Mentor:** Ryan Birmingham
+
+**Overview:** caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model visual and numeric annotation comparison environment.
+If the model is trusted, this application should function as a way for a human to test their observation skills in pathology. Alternatively, if a model is unvalidated, this would work as a way to test the model.  Practically, this would involve creating at least one interactive way to numerically compare a human input with a machine learning model classification or segmentation. Strong proposals would demonstrate at least a few such ways of showing this comparison both numerically and visually.
+This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be alternate kind of training exercise for pathologists.
+
+**Current Status:** New frontend application
+
+**Required Skills:** UX, JavaScript, TensorFlow
+
+**Difficulty:** Hard
+
+**Project Length:** Long
 
 **Source Code:** https://github.com/camicroscope/camicroscope
 
-***
+**Primary Project Contact:** Ryan Birmingham
 
-
-**[6] Role-Based Access Control Deployment Option**
-
-**Primary Mentor:**  Yash Kumar Verma
-
-**Overview:** In previous years, components for role based access control for caMicroscope have been developed. This task would focus on creating deployment configuration for caMicroscope to use these tools in production. This will likely also include some touch-up, additional functions, and documentation for the RBAC components.
-
-**Current Status:** Components Exist
-
-**Required Skills:** JavaScript, Docker/Kubernetes
-
-**Code Challenge:** Docker Compose or Kubernetes Deployment of a series of services.
-
-**Project Size:** Long (350 Hour)
-
-**Source Code:** https://github.com/camicroscope/distro, https://github.com/camicroscope/rbac-admin
-
-***
-
-***
-
-
-**[7] Improving on the real-time collaboration system**
-
-**Primary Mentor:**  Vedant Nandoskar
-
-**Overview:** In last year's GSOC season, we had built a real-time collaboration system  for caMicroscope allowing for remote users to work simultaneously on slides. Most features are based on websockets. Currently, the system supports the following features:
-
-- Real-time two-way data communication of activity on slides.
-- Security mechanism to the communication channels.
-- Role based management of the communication channels.
-- Private and Public channels.
-- In-app group messaging.
-- Integrated Video/Voice calling.
-
-As extensive as the system is, it still needs refinements in terms of:
-
-1. Handling socket communication 
-2. A soft commit feature
-3. Multiple collaboration rooms on a slide
-
-&nbsp;
-1. **Handling socket communication**
-This would consist in optimising the way socket data is handled, transmitted and received before being rendered on the UI. Shortening/compression could also be integrated to allow for lesser network load.
-
-2. **Soft commit feature**
-The soft commit feature would allow for users to work on a slide without saving changes to the database. Something of the sort of a non-persistent datastore. The data in this store would only be saved in the database once the user clicks a 'commit' button. This is important so that the commits from multiple rooms on the same slide do not conflict or overwrite each other.
-
-2. **Multiple collaboration rooms on a slide**
-This feature consists in extending the existing collaboration rooms to share the same slide alongwith having a soft commit feature as described above.
-
-**Current Status:** Real time collaboration system is in place.
-
-**Required Skills:** JavaScript, Websockets, data handling, compression.
-
-**Code Challenge:** Create a simple text editor allowing multiple users to edit the file. This text editor need not have formatting options, a simple texfield would do too. Integrate a simple soft commit feature with multiple collaboration rooms with it. Try to keep it simple without using JS frameworks, simple HTML, CSS, and JS would do.
-
-Libraries you could use: 
-- [https://socket.io/](Socket.io/) - for websockets implementation in JS.
-- [https://ckeditor.com/](CKeditor) - (optional) for a readymade text editor.
-**Project Size:** Long (350 Hour)
-
-**Source Code:** 
-- [Camicroscope](https://github.com/camicroscope/caMicroscope/tree/realtime)
-- [Caracal](https://github.com/camicroscope/Caracal/tree/realtime)
-- [Distro](https://github.com/camicroscope/Distro/tree/realtime)
-***
+**Code Challenge:** Make a clone/minimum viable product of a game similar to geoguessr, focusing on the user interaction and scoring.
 
 &nbsp;
 ***
