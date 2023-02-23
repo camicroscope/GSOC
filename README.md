@@ -156,8 +156,8 @@ This would serve as a demo of caMicroscope, a way to validate machine learning m
 
 Mentors and evaluators usually look for:
 * The proposal itself is clear relevant, and realistic.
-* The contrubutor has demonstrated that they have the relevant skills to complete the proposal.
-* The contrubutor has shown an interest in open source, especially caMicroscope. This includes community involvement.
+* The contributor has demonstrated that they have the relevant skills to complete the proposal.
+* The contributor has shown an interest in open source, especially caMicroscope. This includes community involvement.
 * Code Challenges and other relevant demonstrations go above and beyond in some interesting way.
 
 ## Application Template
