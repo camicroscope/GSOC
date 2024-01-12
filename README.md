@@ -90,18 +90,19 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 ***
 # Applying for GSOC
 
-Mentors and evaluators usually look for:
-* The proposal itself is clear relevant, and realistic.
-* The contrubutor has demonstrated that they have the relevant skills to complete the proposal.
-* The contrubutor has shown an interest in open source, especially caMicroscope. This includes community involvement.
+Mentors and evaluators typically look for the following:
+
+- The proposal is clear, relevant, and realistic.
+- The contributor has demonstrated the relevant skills to complete the proposal.
+- The contributor has shown an interest in open source, especially caMicroscope, including community involvement.
 
 ## Application Template
 
-The following Template is provided to help organize all required information for a successful GSOC application. While following this template is not required, please be sure that your application is complete.
+The following template is provided to help organize all required information for a successful GSOC application. While following this template is not required, ensure that your application is complete.
 
 **1) Project Title:**
 
-**2) Abstract / Project Summary**:
+**2) Abstract / Project Summary:**
 
 Summarize the project in your own words.
 
@@ -114,14 +115,7 @@ Summarize the project in your own words.
 **6) Personal Background (Brief CV)**
 
 **7) Project Goals**
-
-(Enter as bullets)
-
-..
-     
-..
-     
-..
+Describe specific outcomes, measurable or otherwise, as bullets.
 
 **8) Detailed Project Proposal**
 
@@ -129,16 +123,17 @@ Describe what you propose to do for the project.
 
 **9) Project Schedule**
 
-Break the timeline into periods of approximately 7 days. Be clear if you have planned for a full-time or half-time project.
+Break the timeline into periods of approximately 7 days. Be clear on project size and timeframe, in compliance with google's requirements.
+We also highly recommend including a something to show organization-wide as a demo in advance of both midterm and final evaluations to both show off your hard work, and elicit feedback beyond your mentor(s).
 
 **10) Planned GSoC work hours**
 
-Please indicate the work hours (including the timezone), that you hope to work on your project. 
+Please indicate the work hours (including the timezone) that you hope to work on your project.
 
 **11) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
-Indicate any examinations or other personal commitments. 
+Indicate any examinations or other personal commitments.
 
 **12) Open Source and Skills**
 
-Include and explain your open source contribitions, and explain them as needed. Additionally, please highlight your relevant skill set to complete this project. Ideally, there would be some overlap between your open source portfolio and the skillset, and would show some familiarty with relevant pieces of caMicroscope's code base.
+Include and explain your open-source contributions, and explain them as needed. Additionally, highlight your relevant skill set to complete this project. Ideally, there would be some overlap between your open-source portfolio and the skillset, showing familiarity with relevant pieces of caMicroscope's codebase.
