@@ -77,6 +77,23 @@ Overview: caMicroscope is a web-based biomedical image and data viewer, with a s
 
 **Primary Mentor:** Nan Li
 
+## Semantic Data Export and Exploraton
+
+**Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
+
+The project involves the development of interactive features, allowing users to seamlessly navigate through the semantic layers, expand or collapse nested annotations, and gain a comprehensive understanding of the relationships between slides and annotations. This holistic approach aims to improve the overall user experience by offering a clearer and more insightful view of the complex data interactions within caMicroscope.
+
+**Required Skill:** Semantic Web
+
+**Difficulty:** Difficult 
+
+**Project Length:** Long 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Ryan Birmingham
+
+
 ## Eaglescope Automatic Configuration
 
 **Primary Mentor:** Ryan Birmingham
