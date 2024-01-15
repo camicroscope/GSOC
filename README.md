@@ -49,8 +49,6 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Source Code:** New Project
 
-**Primary Project Contact:** Nan Li
-
 ## Modularization of Components 
 
 **Primary Mentors:** Nan Li 
@@ -65,7 +63,19 @@ Overview: caMicroscope is a web-based biomedical image and data viewer, with a s
 
 **Source Code:** https://github.com/camicroscope/caMicroscope 
 
-**Primary Project Contact:** Nan Li
+## Exploratory Annotation Interaction
+
+**Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished a vatiety of different ways. Ultlimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
+
+**Required Skill:** User Experience, Data Visualization
+
+**Difficulty:** Medium 
+
+**Project Length:** Long 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Nan Li
 
 ## Eaglescope Automatic Configuration
 
@@ -83,8 +93,6 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 **Project Length:** Short
 
 **Source Code:** https://github.com/sharmalab/eaglescope
-
-**Primary Project Contact:** Ryan Birmingham
 
 &nbsp;
 ***
