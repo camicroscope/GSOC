@@ -93,6 +93,20 @@ The project involves the development of interactive features, allowing users to 
 
 **Primary Mentor:** Ryan Birmingham
 
+## Batch Image Visualiation and Annotation
+
+**Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently explore multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
+
+**Required Skill:** User Expirence, Image Visualization
+
+**Difficulty:** Easy 
+
+**Project Length:** Short 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Ryan Birmingham
+
 
 ## Eaglescope Automatic Configuration
 
