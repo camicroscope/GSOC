@@ -106,6 +106,19 @@ The project involves the development of interactive features, allowing users to 
 
 **Primary Mentor:** Ryan Birmingham
 
+## Pathologist Annotation Behavior Report
+
+**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. Many pathologists use caMicroscope to annotate WSI cases in their daily work. How pathologists annotate on the slide and the different behaviors that different pathologist works on the same slide are interesting questions. It is a good idea to collect and track pathologists’ annotation behavior in caMicroscope. Currently, caMicroscope only tracks the center position and zoom level of the user view. We propose an implementation intended for improving how to track the pathologist annotation behaviors and generating a pathologist behavior report in various formats such as image and pdf. The behavior report generally has the Pathologist’s view on a slide in  timeline and the pathologist's actions in the slide viewer.
+
+**Required Skill:** Prior experience in Javascript, HTML and CSS, Familiar with backend and MongoDB
+
+**Difficulty:** Easy 
+
+**Project Length:** Short 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Nan Li
 
 ## Eaglescope Automatic Configuration
 
