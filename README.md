@@ -1,63 +1,44 @@
-# caMicroscope GSoC 2023
-<img src="https://avatars0.githubusercontent.com/u/12075069?s=200&v=4" width="150" height="150" align="left" style="padding:10px;"/> caMicroscope is a digital pathology image viewer with support for human/machine generated annotations and markups. The source code of the caMicroscope project can be found at https://github.com/camicroscope/caMicroscope, released with BSD 3-Clause License. In addition to the caMicroscope project, caMicroscope as an organization also hosts several related tools and products at https://github.com/camicroscope/
+# caMicroscope GSoC 2024
 
-# Communicating with the mentors
-We intend to use Slack as the primary medium of communication. The slack room at camicroscope.slack.com is used to discuss project ideas. You may join the caMicroscope Slack channel through our shared link - http://bit.ly/camicroscope
+<h2 align="center">
+  <a href="http://camicro.org/"><img src="https://avatars2.githubusercontent.com/u/12075069?s=400&v=4" style="background-color:rgba(0,0,0,0);" height=230 alt="camicroscope: a web-based image viewer optimized for large bio-medical image data viewing"></a>
+</h2>
 
-# Code Challenges
-Code Challenges submissions should demonstrate creativity, understanding of the project, and ability to execute on a project proposal. Submit code challenges for early review and feedback here: [caMicroscope | GSOC 2023 | code challenge submission](https://forms.gle/moA6QwPZLMhuKJXD6) 
- 
-# List of Ideas
-The following ideas were created with feedback from contributors and collaborators. Project ideas are not listed in any particular order. Submissions need not come from the below list, but should have reasonable relevance to the caMicroscope organization and its goals. Please feel free to discuss these or other project ideas on the email list or Slack group.  
+caMicroscope serves as a digital pathology image viewer, supporting human and machine-generated annotations and markups. The project's source code is available on GitHub at [caMicroscope GitHub Repository](https://github.com/camicroscope/caMicroscope) under the BSD 3-Clause License.
+
+**caMicroscope Organization:**
+
+- The caMicroscope organization hosts various related tools and products, accessible at [caMicroscope GitHub Organization](https://github.com/camicroscope/).
+
+**Communication Channels:**
+
+- **General Communication:** GitHub discussion forums are the primary communication channels.
+- **GSOC-specific Communication:** Utilize the [GSOC Forum](https://github.com/camicroscope/GSOC/discussions) for GSOC-related discussions, including project ideas, timelines, and advice.
+- **Organization-wide Questions:** For caMicroscope organization-wide questions not directly related to GSOC, use the [general forum](https://github.com/orgs/camicroscope/discussions).
+- **Specific Communication:** Issues or discussions on individual repositories should be used for relevant and specific communication.
+- **Private Communication:** For private communication with mentors, please email gsoc@camicro.org.
+
+**Selection and "Code Challenges":**
+
+- The caMicroscope mentor/admin team is reevaluating student selection processes. Emphasizing meaningful contributions to caMicroscope over disconnected demos is the priority.
+- Refer to the [contribution guide](https://camicro.org/contributing.html) for details on making meaningful contributions.
+
+**List of Ideas:**
+
+- Project ideas have been compiled with input from contributors and collaborators.
+- Ideas are not listed in any specific order.
+- Submissions are not limited to the provided list but should be relevant to caMicroscope organization goals, see the [roadmap document](https://camicro.org/roadmap.html) for more guidance.
+- Discussion on project ideas is encouraged through the [GSOC Forum](https://github.com/camicroscope/GSOC/discussions).
 
 ***
 
-## [1] Machine Learning Training Assistant
+## High Dimensional Imaging Support
 
-**Primary Mentors:** Tony Pan
-
-**Overview** Many user actions in pathology data collection are mostly independent. Annotation, classification, and user review are produced largely by an expert opinion without use of machine learning tools. To augment this workflow, caMicroscope has added some specific tools which can assist with or validate annotations and classifications. However, at this time use of the tools usually require a pretrained model in order to use. There is a workflow for creating labeled dataset images and training in caMicroscope, but it is difficult to use in practice.
-This project, the machine learning training assistant, would be both to consolidate and improve the user experience of the training workflow, as well as to find ways to improve performance and time taken for predictions.
-This project would likely involve adding a microservice to allow training to run on a server or third party platform based upon configuration.
-A significant amount of this project would be user experience focused, specifically finding ways to quickly provide insight using existing machine learning tools. To augment this, the project may include additional implementations, as well as runtime analysis to determine what information can be considered at a given time.
-
-**Required Skill:** 
-
-**Difficulty:** Hard
-
-**Project Length:** Long
-
-**Primary Project Contact:** Tony Pan
-
-**Source Code**: https://github.com/camicroscope/camicroscope and https://github.com/camicroscope/caracal
-
-**Code Challenge:** Create a frontend web application which uses tensorflow-js to provide some form of analysis on a user-supplied image unobtrusively. This should function on multiple timescales as possible, so that some information can be displayed immediately, while other slower-running calculations can be returned on completion.
-
-## [2] Dicom Support
-
-**Primary Mentors:** Tony Pan 
-
-**Overview:** caMicroscope supports openslide compatible file types for its tiling engine. While many other formats are often requested to work without conversion, one of the most common suggestions that research groups and governmental organizations ask for is DICOM Whole Slide Imaging (See https://dicom.nema.org/dicom/dicomwsi/). This format follows the DICOM standards as are common in radiology, so this would help promote interdisciplinary research. This project would require creating an alternate tiling engine microservice which can efficiently serve regions of a slide from DICOM WSI format into either a simulated deepzoom image or the IIIF url pattern format (see https://iiif.io/).
-
-**Required Skill:**
-
-**Difficulty:** Medium
-
-**Project Length:** Long
-
-**Source Code:** New Project. See https://github.com/camicroscope/iipimage for a similar project.
-
-**Primary Project Contact:** Tony Pan
-
-**Code Challenge:** Create a microservice in a language/framework of your choice which can serve metadata about any DICOM file.
-
-## [3] Multi-channel Imaging Support
-
-**Primary Mentors:** Nan Li 
+**Primary Mentors:** Ryan Birmingham
 
 **Overview:** Most of the whole slide image data that we see are RGB images, representing the direct reading from an optical scanner on a tissue sample. This, combined with chemical stains on the image, provides a way to let experts assess an image based on inferences of relative color (e.g. H&E slide pink-purple ratio).
 Sometimes, the spatial data represented is not the direct RGB values from a scanner. In this case, we encode three values as RGB. However, caMicroscope does not support datasets which have a spatial representation for more than three channels.
-This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support.
+This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support. This should likely be accomplished by adding a supplementary tile server which can read one channel at a time and return it as pyramidal images dynamically, and a user interface to let user select and mix such channels.
 
 **Required Skill:** Image Processing, User Experience
 
@@ -67,29 +48,7 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Source Code:** New Project
 
-**Primary Project Contact:** Nan Li
-
-**Code Challenge:** Create a function which takes in numerical data as a csv with an arbitrary number of fields, and a selection of which three fields to assign to red, green, and blue, and returns an image.
-
-## [4] Collection and Study Management 
-
-**Primary Mentors:** Nan Li 
-
-**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. It helps researchers and pathologists host, manage, and annotate the whole slide imaging (WSI). The WSIs and annotations are the most important fundamental dataset in caMicroscope. As the slides and annotations grows, researchers and pathologists need to an efficient way to organize slides and annotations. Currently, caMicroscope use the concept of collection to manage slides. Each annotation is directly associated with its slide. It is hard for researchers and pathologists to divide a study by using collection since the different studies need researchers and pathologists focus on. For example, some studies might focus on make annotations on a series of slides. And some studies might focus on evaluation on series of annotations. We propose an implementation intended for refactoring and extending current collection management. Design a novel collection and study management to help reorganize slides and annotations to help users organize their studies. 
-
-**Required Skill:** Prior experience in Node.js, and mongoDB. Familiar with Javascript, HTML and CSS 
-
-**Difficulty:** Medium 
-
-**Project Length:** Long 
-
-**Source Code:** https://github.com/camicroscope/caMicroscope and https://github.com/camicroscope/Caracal 
-
-**Primary Project Contact:** Nan Li
-
-**Code Challenge:** Use object-oriented design to create a simple webapp which provides the operation to manipulate the collection in MongoDB. The code challenge should focus on developing the backend in REST APIs which uses Node.js to operate mongoDB and a simple frontend to proof the contributors understanding the basic architecture of web application. 
-
-## [5] Modularization of Components 
+## Modularization of Components 
 
 **Primary Mentors:** Nan Li 
 
@@ -103,11 +62,52 @@ Overview: caMicroscope is a web-based biomedical image and data viewer, with a s
 
 **Source Code:** https://github.com/camicroscope/caMicroscope 
 
-**Primary Project Contact:** Nan Li
+## Exploratory Annotation Interaction
 
-**Code Challenge:** A simple webapp demonstrating Web Components 
+**Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished a vatiety of different ways. Ultlimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
 
-## [6] Eaglescope Automatic Configuration
+**Required Skill:** User Experience, Data Visualization
+
+**Difficulty:** Medium 
+
+**Project Length:** Long 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Nan Li
+
+## Semantic Data Export and Exploraton
+
+**Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
+
+The project involves the development of interactive features, allowing users to seamlessly navigate through the semantic layers, expand or collapse nested annotations, and gain a comprehensive understanding of the relationships between slides and annotations. This holistic approach aims to improve the overall user experience by offering a clearer and more insightful view of the complex data interactions within caMicroscope.
+
+**Required Skill:** Semantic Web
+
+**Difficulty:** Difficult 
+
+**Project Length:** Long 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Ryan Birmingham
+
+## Batch Image Visualiation and Annotation
+
+**Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently explore multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
+
+**Required Skill:** User Expirence, Image Visualization
+
+**Difficulty:** Easy 
+
+**Project Length:** Short 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Ryan Birmingham
+
+
+## Eaglescope Automatic Configuration
 
 **Primary Mentor:** Ryan Birmingham
 
@@ -124,49 +124,23 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 
 **Source Code:** https://github.com/sharmalab/eaglescope
 
-**Primary Project Contact:** Ryan Birmingham
-
-**Code Challenge:** Use eaglescope to visualize a dataset in a selection of different ways.
-
-## [7] User Driven Pathology Validation
-
-**Primary Mentor:** Ryan Birmingham
-
-**Overview:** caMicroscope has a viewer component and support for machine learning models. Thus, we have the components to build an alternate version of the viewer to host a pathologist vs machine learning model visual and numeric annotation comparison environment.
-If the model is trusted, this application should function as a way for a human to test their observation skills in pathology. Alternatively, if a model is unvalidated, this would work as a way to test the model.  Practically, this would involve creating at least one interactive way to numerically compare a human input with a machine learning model classification or segmentation. Strong proposals would demonstrate at least a few such ways of showing this comparison both numerically and visually.
-This would serve as a demo of caMicroscope, a way to validate machine learning models, and could be alternate kind of training exercise for pathologists.
-
-**Current Status:** New frontend application
-
-**Required Skills:** UX, JavaScript, TensorFlow
-
-**Difficulty:** Hard
-
-**Project Length:** Long
-
-**Source Code:** https://github.com/camicroscope/camicroscope
-
-**Primary Project Contact:** Ryan Birmingham
-
-**Code Challenge:** Make a clone/minimum viable product of a game similar to geoguessr, focusing on the user interaction and scoring.
-
 &nbsp;
 ***
 # Applying for GSOC
 
-Mentors and evaluators usually look for:
-* The proposal itself is clear relevant, and realistic.
-* The contrubutor has demonstrated that they have the relevant skills to complete the proposal.
-* The contrubutor has shown an interest in open source, especially caMicroscope. This includes community involvement.
-* Code Challenges and other relevant demonstrations go above and beyond in some interesting way.
+Mentors and evaluators typically look for the following:
+
+- The proposal is clear, relevant, and realistic.
+- The contributor has demonstrated the relevant skills to complete the proposal.
+- The contributor has shown an interest in open source, especially caMicroscope, including community involvement.
 
 ## Application Template
 
-The following Template is provided to help organize all required information for a successful GSOC application. While following this template is not required, please be sure that your application is complete.
+The following template is provided to help organize all required information for a successful GSOC application. While following this template is not required, ensure that your application is complete.
 
 **1) Project Title:**
 
-**2) Abstract / Project Summary**:
+**2) Abstract / Project Summary:**
 
 Summarize the project in your own words.
 
@@ -179,14 +153,7 @@ Summarize the project in your own words.
 **6) Personal Background (Brief CV)**
 
 **7) Project Goals**
-
-(Enter as bullets)
-
-..
-     
-..
-     
-..
+Describe specific outcomes, measurable or otherwise, as bullets.
 
 **8) Detailed Project Proposal**
 
@@ -194,18 +161,17 @@ Describe what you propose to do for the project.
 
 **9) Project Schedule**
 
-Break the timeline into periods of approximately 7 days. Be clear if you have planned for a full-time or half-time project.
+Break the timeline into periods of approximately 7 days. Be clear on project size and timeframe, in compliance with google's requirements.
+We also highly recommend including a something to show organization-wide as a demo in advance of both midterm and final evaluations to both show off your hard work, and elicit feedback beyond your mentor(s).
 
 **10) Planned GSoC work hours**
 
-Please indicate the work hours (including the timezone), that you hope to work on your project. 
+Please indicate the work hours (including the timezone) that you hope to work on your project.
 
 **11) Planned absence/vacation days and other commitments during the GSoC period (including the community bonding period)**
 
-Indicate any examinations or other personal commitments. 
+Indicate any examinations or other personal commitments.
 
-**12) Skill Set**
+**12) Open Source and Skills**
 
-Your relevant skill set to complete this project. Include pointers to bug fixes, demos, and previous work.
-
-Also include pointers to the completed Code Challenge (if applicable).
+Include and explain your open-source contributions, and explain them as needed. Additionally, highlight your relevant skill set to complete this project. Ideally, there would be some overlap between your open-source portfolio and the skillset, showing familiarity with relevant pieces of caMicroscope's codebase.
