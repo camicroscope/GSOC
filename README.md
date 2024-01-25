@@ -48,20 +48,6 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Source Code:** New Project
 
-## Modularization of Components 
-
-**Primary Mentors:** Nan Li 
-
-Overview: caMicroscope is a web-based biomedical image and data viewer, with a strong emphasis on cancer pathology WSI (Whole Slide Imaging). Application is written in pure javascript, CSS and HTML and it makes developers and contributors easy to understand caMicroscope code base. However, the pure Javascript and CSS makes the code less regular and hard reuse by new features. It is increasing the development and maintenance problems. To keep caMicroscope become a robust and feasible application, the modularization design of frontend components should be involved. It will create a health and feasible fundamentals of caMicroscope development and maintenance. We propose to refactor and create a series of web components to help people who want to learn and use this project quickly creating a customized version to fit their demands.   
-
-**Required Skill:** Prior experience in Javascript, HTML, CSS and Bootstrap. Understand object-oriented design (OOD) 
-
-**Difficulty:** Medium 
-
-**Project Length:** Long 
-
-**Source Code:** https://github.com/camicroscope/caMicroscope 
-
 ## Exploratory Annotation Interaction
 
 **Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished a vatiety of different ways. Ultlimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
