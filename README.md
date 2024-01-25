@@ -76,6 +76,21 @@ Overview: caMicroscope is a web-based biomedical image and data viewer, with a s
 
 **Primary Mentor:** Nan Li
 
+## Accessibility Testing and Improvement
+
+**Overview:** This project aims to improve the accessibility of caMicroscope's user interactions and add automatic testing as possible to ensure that further changes continue to uphold accessibile usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
+
+**Required Skill:** User Experience, Accessibility (a11y), CI/CD Testing
+
+**Difficulty:** Medium 
+
+**Project Length:** Short 
+
+**Source Code:** http://github.com/camicroscope/camicroscope
+
+**Primary Mentor:** Ryan Birmingham
+
+
 ## Semantic Data Export and Exploraton
 
 **Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
