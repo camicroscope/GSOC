@@ -29,6 +29,7 @@ caMicroscope serves as a digital pathology image viewer, supporting human and ma
 - Ideas are not listed in any specific order.
 - Submissions are not limited to the provided list but should be relevant to caMicroscope organization goals, see the [roadmap document](https://camicro.org/roadmap.html) for more guidance.
 - Discussion on project ideas is encouraged through the [GSOC Forum](https://github.com/camicroscope/GSOC/discussions).
+- Each idea has a list of project requirements which represent the minimum which must be completed to pass.
 
 ***
 
@@ -40,11 +41,16 @@ caMicroscope serves as a digital pathology image viewer, supporting human and ma
 Sometimes, the spatial data represented is not the direct RGB values from a scanner. In this case, we encode three values as RGB. However, caMicroscope does not support datasets which have a spatial representation for more than three channels.
 This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support. This should likely be accomplished by adding a supplementary tile server which can read one channel at a time and return it as pyramidal images dynamically, and a user interface to let user select and mix such channels.
 
-**Required Skill:** Image Processing, User Experience
+**Project Requirements:** 
+ * Microservice to read multi channel images with channel selection and return tiles in IIIF or DZI (or another openseadragon compatible format)
+ * Documented API for this microservice
+ * Integrated with the caMicroscope UX, codebase, and deployment
+
+**Required Skills:** Image Processing, User Experience
 
 **Difficulty:** Medium 
 
-**Project Length:** Long 
+**Project Length:** Long (~350 hours)
 
 **Source Code:** New Project
 
@@ -52,11 +58,16 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished a vatiety of different ways. Ultlimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
 
-**Required Skill:** User Experience, Data Visualization
+**Project Requirements:** 
+ * At least three novel and distinct functional annotation prototypes
+ * Documentation covering use and design goals for each of these prototypes
+ * Integrated with the caMicroscope UX and codebase
+   
+**Required Skills:** User Experience, Data Visualization
 
 **Difficulty:** Medium 
 
-**Project Length:** Long 
+**Project Length:** Long (~350 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
@@ -66,11 +77,16 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Overview:** This project aims to improve the accessibility of caMicroscope's user interactions and add automatic testing as possible to ensure that further changes continue to uphold accessibile usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
 
-**Required Skill:** User Experience, Accessibility (a11y), CI/CD Testing
+**Project Requirements:** 
+ * Automatic reports for caMicroscope app pages and documenation pages according to some exsting accessibility standard
+ * Changes which lead to a meaningful improvement in these reports' results
+ * Revision of user documentation with respect to accessibility and any changes made
+
+**Required Skills:** User Experience, Accessibility (a11y), CI/CD Testing
 
 **Difficulty:** Medium 
 
-**Project Length:** Short 
+**Project Length:** Short (~90 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
@@ -83,25 +99,35 @@ This project aims to add the backend support and frontend interactions to let us
 
 The project involves the development of interactive features, allowing users to seamlessly navigate through the semantic layers, expand or collapse nested annotations, and gain a comprehensive understanding of the relationships between slides and annotations. This holistic approach aims to improve the overall user experience by offering a clearer and more insightful view of the complex data interactions within caMicroscope.
 
-**Required Skill:** Semantic Web
+**Project Requirements:** 
+ * Interpreting caMicroscope's data and metadata in a documented semantic representaion format
+ * At least one novel visualization, app, or othter way to understand the semantic relationships of caMicroscop data
+ * Integrated with the caMicroscope UX and codebase
+
+**Required Skills:** Semantic Web
 
 **Difficulty:** Difficult 
 
-**Project Length:** Long 
+**Project Length:** Medium (~175 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
 **Primary Mentor:** Ryan Birmingham
 
-## Batch Image Visualiation and Annotation
+## Quality Triage via Image Visualiation and Annotation
 
-**Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently explore multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
+**Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently triage multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
 
-**Required Skill:** User Expirence, Image Visualization
+**Project Requirements:** 
+ * A web application (within caMicroscope) which is able to let a user interactively view multiple slides at once and collect data from the user about those slides.
+ * User documentation for this application extending caMicroscope's user documentation
+ * Integrated with the caMicroscope UX and codebase
+
+**Required Skills:** User Expirence, Image Visualization
 
 **Difficulty:** Easy 
 
-**Project Length:** Short 
+**Project Length:** Short (~90 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
@@ -111,11 +137,17 @@ The project involves the development of interactive features, allowing users to 
 
 **Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. Many pathologists use caMicroscope to annotate WSI cases in their daily work. How pathologists annotate on the slide and the different behaviors that different pathologist works on the same slide are interesting questions. It is a good idea to collect and track pathologists’ annotation behavior in caMicroscope. Currently, caMicroscope only tracks the center position and zoom level of the user view. We propose an implementation intended for improving how to track the pathologist annotation behaviors and generating a pathologist behavior report in various formats such as image and pdf. The behavior report generally has the Pathologist’s view on a slide in  timeline and the pathologist's actions in the slide viewer.
 
-**Required Skill:** Prior experience in Javascript, HTML and CSS, Familiar with backend and MongoDB
+**Project Requirements:** 
+ * Extend and improve the "log" data from caMicroscope when it is collected
+ * A web application (within caMicroscope) which is able to interpret and visualize user data
+ * User documentation for this application extending caMicroscope's user documentation
+ * Integrated with the caMicroscope UX and codebase
+
+**Required Skills:** Javascript, HTML CSS, MongoDB, Web Backend
 
 **Difficulty:** Easy 
 
-**Project Length:** Short 
+**Project Length:** Short (~90 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
@@ -128,9 +160,14 @@ The project involves the development of interactive features, allowing users to 
 **Overview:** Eaglescope is a web application for exploratory analysis on high dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
 This project, Eaglescope Automatic Configuration, aims to provide instant statistical insight into which fields or combinations of fields can be best represented in the various different visualizations implemented in eaglescope. This would have the added bonus of letting a user quickly explore a new dataset without writing any configuration. This has been proposed as a short project, and would focus on classical statistical methods. 
 
+**Project Requirements:** 
+ * A documented method for deciding which visualizations work with a given tabular dataset
+ * Implementation of this method in Eaglescope such that it is used when no configuration is provided
+ * Integrated with the Eaglescope UX and codebase
+
 **Current Status:** New frontend application
 
-**Required Skills:** UX, JavaScript, TensorFlow
+**Required Skills:** UX, JavaScript, AI Recommender Systems, TensorFlow or other Web-compatible ML Toolkit
 
 **Difficulty:** Medium
 
