@@ -35,14 +35,12 @@ caMicroscope serves as a digital pathology image viewer, supporting human and ma
 
 ## High Dimensional Imaging Support
 
-**Primary Mentors:** Ryan Birmingham
-
 **Overview:** Most of the whole slide image data that we see are RGB images, representing the direct reading from an optical scanner on a tissue sample. This, combined with chemical stains on the image, provides a way to let experts assess an image based on inferences of relative color (e.g. H&E slide pink-purple ratio).
 Sometimes, the spatial data represented is not the direct RGB values from a scanner. In this case, we encode three values as RGB. However, caMicroscope does not support datasets which have a spatial representation for more than three channels.
-This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support. This should likely be accomplished by adding a supplementary tile server which can read one channel at a time and return it as pyramidal images dynamically, and a user interface to let user select and mix such channels.
+This project aims to add the backend support and frontend interactions to let users make sense of higher-dimensional data via multi-channel imaging support. This should likely be accomplished by adding a supplementary tile server which can read one channel at a time and return it as pyramidal images dynamically, and a user interface to let users select and mix such channels.
 
 **Project Requirements:** 
- * Microservice to read multi channel images with channel selection and return tiles in IIIF or DZI (or another openseadragon compatible format)
+ * Microservice to read multi-channel images with channel selection and return tiles in IIIF or DZI (or another Openseadragon compatible format)
  * Documented API for this microservice
  * Integrated with the caMicroscope UX, codebase, and deployment
 
@@ -54,13 +52,15 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Source Code:** New Project
 
+**Primary Mentors:** Ryan Birmingham
+
 ## Exploratory Annotation Interaction
 
-**Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished a vatiety of different ways. Ultlimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
+**Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished in a variety of different ways. Ultimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and an entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
 
 **Project Requirements:** 
  * At least three novel and distinct functional annotation prototypes
- * Documentation covering use and design goals for each of these prototypes
+ * Documentation covering the use and design goals for each of these prototypes
  * Integrated with the caMicroscope UX and codebase
    
 **Required Skills:** User Experience, Data Visualization
@@ -75,10 +75,10 @@ This project aims to add the backend support and frontend interactions to let us
 
 ## Accessibility Testing and Improvement
 
-**Overview:** This project aims to improve the accessibility of caMicroscope's user interactions and add automatic testing as possible to ensure that further changes continue to uphold accessibile usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
+**Overview:** This project aims to improve the accessibility of caMicroscope's user interactions (focus on Slides and annotation module and administration. There are some limitations for the accessibility of the slide viewer) and add automatic testing as possible to ensure that further changes continue to uphold accessible usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
 
 **Project Requirements:** 
- * Automatic reports for caMicroscope app pages and documenation pages according to some exsting accessibility standard
+ * Automatic reports for caMicroscope app pages and documentation pages according to some existing accessibility standard
  * Changes which lead to a meaningful improvement in these reports' results
  * Revision of user documentation with respect to accessibility and any changes made
 
@@ -93,15 +93,15 @@ This project aims to add the backend support and frontend interactions to let us
 **Primary Mentor:** Ryan Birmingham
 
 
-## Semantic Data Export and Exploraton
+## Semantic Data Export and Exploration
 
 **Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
 
 The project involves the development of interactive features, allowing users to seamlessly navigate through the semantic layers, expand or collapse nested annotations, and gain a comprehensive understanding of the relationships between slides and annotations. This holistic approach aims to improve the overall user experience by offering a clearer and more insightful view of the complex data interactions within caMicroscope.
 
 **Project Requirements:** 
- * Interpreting caMicroscope's data and metadata in a documented semantic representaion format
- * At least one novel visualization, app, or othter way to understand the semantic relationships of caMicroscop data
+ * Interpreting caMicroscope's data and metadata in a documented semantic representation format
+ * At least one novel visualization, app, or other way to understand the semantic relationships of caMicroscop data
  * Integrated with the caMicroscope UX and codebase
 
 **Required Skills:** Semantic Web
@@ -114,7 +114,7 @@ The project involves the development of interactive features, allowing users to 
 
 **Primary Mentor:** Ryan Birmingham
 
-## Quality Triage via Image Visualiation and Annotation
+## Quality Triage via Image Visualization and Annotation
 
 **Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently triage multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
 
@@ -123,7 +123,7 @@ The project involves the development of interactive features, allowing users to 
  * User documentation for this application extending caMicroscope's user documentation
  * Integrated with the caMicroscope UX and codebase
 
-**Required Skills:** User Expirence, Image Visualization
+**Required Skills:** User Experience, Image Visualization
 
 **Difficulty:** Easy 
 
@@ -131,15 +131,15 @@ The project involves the development of interactive features, allowing users to 
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
-**Primary Mentor:** Ryan Birmingham
+**Primary Mentor:** Nan Li
 
 ## Pathologist Annotation Behavior Report
 
-**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. Many pathologists use caMicroscope to annotate WSI cases in their daily work. How pathologists annotate on the slide and the different behaviors that different pathologist works on the same slide are interesting questions. It is a good idea to collect and track pathologists’ annotation behavior in caMicroscope. Currently, caMicroscope only tracks the center position and zoom level of the user view. We propose an implementation intended for improving how to track the pathologist annotation behaviors and generating a pathologist behavior report in various formats such as image and pdf. The behavior report generally has the Pathologist’s view on a slide in  timeline and the pathologist's actions in the slide viewer.
+**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. Many pathologists use caMicroscope to annotate WSI cases in their daily work. How pathologists annotate the slide and the different behaviors that different pathologist works on the same slide are interesting questions. It is a good idea to collect and track pathologists’ annotation behavior in caMicroscope. Currently, caMicroscope only tracks the center position and zoom level of the user view. We propose an implementation intended for improving how to track the pathologist annotation behaviors and generating a pathologist behavior report in various formats such as image and pdf. The behavior report generally has the Pathologist’s view on a slide in  a timeline and the pathologist's actions in the slide viewer.
 
 **Project Requirements:** 
  * Extend and improve the "log" data from caMicroscope when it is collected
- * A web application (within caMicroscope) which is able to interpret and visualize user data
+ * A web application (within caMicroscope) which is able to interpret and visualize user behavior data
  * User documentation for this application extending caMicroscope's user documentation
  * Integrated with the caMicroscope UX and codebase
 
@@ -155,10 +155,8 @@ The project involves the development of interactive features, allowing users to 
 
 ## Eaglescope Automatic Configuration
 
-**Primary Mentor:** Ryan Birmingham
-
-**Overview:** Eaglescope is a web application for exploratory analysis on high dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
-This project, Eaglescope Automatic Configuration, aims to provide instant statistical insight into which fields or combinations of fields can be best represented in the various different visualizations implemented in eaglescope. This would have the added bonus of letting a user quickly explore a new dataset without writing any configuration. This has been proposed as a short project, and would focus on classical statistical methods. 
+**Overview:** Eaglescope is a web application for exploratory analysis of high-dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
+This project, Eaglescope Automatic Configuration, aims to provide instant statistical insight into which fields or combinations of fields can be best represented in the various different visualizations implemented in Eaglescope. This would have the added bonus of letting a user quickly explore a new dataset without writing any configuration. This has been proposed as a short project, and would focus on classical statistical methods. 
 
 **Project Requirements:** 
  * A documented method for deciding which visualizations work with a given tabular dataset
@@ -174,6 +172,8 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 **Project Length:** Short
 
 **Source Code:** https://github.com/sharmalab/eaglescope
+
+**Primary Mentor:** Ryan Birmingham
 
 &nbsp;
 ***
