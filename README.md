@@ -1,7 +1,7 @@
 # caMicroscope GSoC 2024
 
 <h2 align="center">
-  <a href="http://camicro.org/"><img src="https://avatars2.githubusercontent.com/u/12075069?s=400&v=4" style="background-color:rgba(0,0,0,0);" height=230 alt="camicroscope: a web-based image viewer optimized for large bio-medical image data viewing"></a>
+  <a href="http://camicroscope.org/"><img src="https://avatars2.githubusercontent.com/u/12075069?s=400&v=4" style="background-color:rgba(0,0,0,0);" height=230 alt="camicroscope: a web-based image viewer optimized for large bio-medical image data viewing"></a>
 </h2>
 
 caMicroscope serves as a digital pathology image viewer, supporting human and machine-generated annotations and markups. The project's source code is available on GitHub at [caMicroscope GitHub Repository](https://github.com/camicroscope/caMicroscope) under the BSD 3-Clause License.
@@ -21,13 +21,13 @@ caMicroscope serves as a digital pathology image viewer, supporting human and ma
 **Selection and "Code Challenges":**
 
 - The caMicroscope mentor/admin team is reevaluating student selection processes. Emphasizing meaningful contributions to caMicroscope over disconnected demos is the priority.
-- Refer to the [contribution guide](https://camicro.org/contributing.html) for details on making meaningful contributions.
+- Refer to the [contribution guide](https://camicroscope.org/contributing.html) for details on making meaningful contributions.
 
 **List of Ideas:**
 
 - Project ideas have been compiled with input from contributors and collaborators.
 - Ideas are not listed in any specific order.
-- Submissions are not limited to the provided list but should be relevant to caMicroscope organization goals, see the [roadmap document](https://camicro.org/roadmap.html) for more guidance.
+- Submissions are not limited to the provided list but should be relevant to caMicroscope organization goals, see the [roadmap document](https://camicroscope.org/roadmap.html) for more guidance.
 - Discussion on project ideas is encouraged through the [GSOC Forum](https://github.com/camicroscope/GSOC/discussions).
 - Each idea has a list of project requirements which represent the minimum which must be completed to pass.
 
