@@ -73,6 +73,8 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Primary Mentor:** Nan Li
 
+
+
 ## Accessibility Testing and Improvement
 
 **Overview:** This project aims to improve the accessibility of caMicroscope's user interactions (focus on Slides and annotation module and administration. There are some limitations for the accessibility of the slide viewer) and add automatic testing as possible to ensure that further changes continue to uphold accessible usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
@@ -92,6 +94,25 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Primary Mentor:** Ryan Birmingham
 
+## Image Classification using Foundation Models
+**Overview:** This project will explore the utility of pre-trained and foundation AI models to carry out patch-level classification tasks in whole slide tissue images. A pre-trained or foundation model can be used as an encoder to train a task specific model. In our project, the task specific model will classify image patches extracted from whole slide images. Using a pre-trained or foundation model can help reduce training costs, by reducing the volume of training data and/or training a simpler model. It can also result in more robust and more accurate models. This project will primarily use models available at huggingface (https://huggingface.co). It will implement software components that: (1) will allow a user to search for and download a pre-trained or foundation model from the huggingface repository, (2) select a classification network from a collection of classification network implementations, (3) train the selected classification network with the pre-trained/foundation model as the encoder, and (4) apply the trained model on patches in a whole slide image.  
+
+**Project Requirements:** 
+ * A documented method for training a classification model using a pre-trained or foundation model
+ * Implementation of this method as a set of software components
+ * Integration of the components with caMicroscope
+   
+**Current Status:** New backend and frontend components
+
+**Required Skills:** UX, Artificial Intelligence, Pytorch, Micro-services
+
+**Difficulty:** High
+
+**Project Length:** Long
+
+**Source Code:** http://github.com/camicroscope/camicroscope 
+
+**Primary Mentor:** Tahsin Kurc
 
 ## Semantic Data Export and Exploration
 
