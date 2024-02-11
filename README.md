@@ -108,7 +108,7 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Difficulty:** High
 
-**Project Length:** Long
+**Project Length:** Long (~350 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope 
 
@@ -190,7 +190,7 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 
 **Difficulty:** Medium
 
-**Project Length:** Short
+**Project Length:** Medium (~175 hours)
 
 **Source Code:** https://github.com/sharmalab/eaglescope
 
