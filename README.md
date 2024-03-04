@@ -21,6 +21,7 @@ caMicroscope serves as a digital pathology image viewer, supporting human and ma
 **Selection and "Code Challenges":**
 
 - The caMicroscope mentor/admin team is reevaluating student selection processes. Emphasizing meaningful contributions to caMicroscope over disconnected demos is the priority.
+- Some suggested [contributor tasks are highlighted here](ContributorTasks.md).
 - Refer to the [contribution guide](https://camicroscope.org/contributing.html) for details on making meaningful contributions.
 
 **List of Ideas:**
