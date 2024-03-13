@@ -10,7 +10,7 @@ No need to be an expert! These tasks are perfect for developing new skills and g
 
 * [Clone caMicroscope and its repositories](#how-to-clone-a-repository), especially distro
 * [Install Docker](#installing-docker) and Docker compose
-* Run some version of caMicroscope locally (recommended develop.yml)
+* [Run some version of caMicroscope](#running-camicroscope-in-docker) locally (recommended develop.yml)
 * Add a Slide to your instance of caMicroscope
 * Experiment with the Viewer Tools
 * Experiment with additional Tools
@@ -35,7 +35,7 @@ No need to be an expert! These tasks are perfect for developing new skills and g
   5. Once the installation is complete, Docker Desktop should be installed and running on your Windows PC. You should see the Docker icon in the system tray.
   To verify that Docker is installed correctly, open a command prompt and run the following command:
   
-  `docker --version`
+       `docker --version`
 
   You should see the version number of Docker displayed in the output if the installation was successful
 
@@ -44,6 +44,17 @@ No need to be an expert! These tasks are perfect for developing new skills and g
   2. Once the download is complete, open the downloaded .dmg file by double-clicking it. Drag the Docker icon to the Applications folder to install Docker Desktop.
   3. After installation, open Launchpad or use Spotlight search to find and launch Docker Desktop.
   4. On macOS Catalina (10.15) and later, Docker Desktop requires permission to install a system extension. Follow the on-screen prompts to allow the installation.
+
+  ### Running caMicroscope in Docker
+  1. Open a terminal or command prompt window and navigate to the directory where you cloned the caMicroscope repository.
+  2. Run the following command:
+
+        `docker-compose -f develop.yml up`
+    
+  This command starts the caMicroscope services defined in the develop.yml file. Ensure you have the docker desktop app open before running this command. It may take some time for Docker to download and set up the required containers.
+
+  4. Run the command: `docker-compose -f develop.yml build`
+  5. Once the Docker containers are up and running, open a web browser and go to  http://localhost:4010/ to see the landing page
 
  
 
