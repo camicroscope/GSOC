@@ -1,4 +1,4 @@
-# caMicroscope GSoC 2024
+# caMicroscope GSoC 2025
 
 <h2 align="center">
   <a href="http://camicroscope.org/"><img src="https://avatars2.githubusercontent.com/u/12075069?s=400&v=4" style="background-color:rgba(0,0,0,0);" height=230 alt="camicroscope: a web-based image viewer optimized for large bio-medical image data viewing"></a>
@@ -55,65 +55,33 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Primary Mentors:** Ryan Birmingham
 
-## Exploratory Annotation Interaction
 
-**Overview:** Annotating images is an essential feature of caMicroscope, and this can be accomplished in a variety of different ways. Ultimately, the goal is to let a user share their understanding and perspective, which can be centered on a region of interest of a slide, and an entire slide, or a set of slides at once. This project involves basic research and creating multiple varied prototypes of new annotation UX workflows in order to allow for collected data to reflect the perspective and expertise of users.
+## IIP Image Modernization 
+
+**Overview:** The tileserver service, IIP Image, is essential for caMicroscope's ability to function. Since it breaks large images of various formats into pieces and returns them, the intermediate format of the tiles impacts how the images end up being displayed to the end users.
+
+Fortunately, due to containerization, this quite tepermental software has been stable. However, this also means we have accumulated tech debt, and the IIP upstream codebase is well ahead of our server. We hope to be able to use modern features, especially losslessly compressed PNG encoding. This would require fixing or redoing the upgrades, which are quite substantial.
+
+ALTERNATIVELY: If you can get a python or other stable and performant alternate implementation of a IIIF or DZI (or other openseadragon compatible protocol) which works with the WSIs we use, this may be done in place. For exactly this reason, though, focus on clarity and maintainability, especially if you take this route.
+
+Please make a selection of high level method prior to proposal, if possible.
 
 **Project Requirements:** 
- * At least three novel and distinct functional annotation prototypes
- * Documentation covering the use and design goals for each of these prototypes
- * Integrated with the caMicroscope UX and codebase
-   
-**Required Skills:** User Experience, Data Visualization
+ * Tile server should be able to support lossless png and other encodings
+ * Tile server should be able to read Openslide images
+ * Bonus, Tile server should be able to also read BioFormats Images
 
-**Difficulty:** Medium 
+**Current Status:** Existing Codebase, Work in progress patch
+
+**Required Skills:** C++, Image Processing, Web Services
+
+**Difficulty:** Difficult
 
 **Project Length:** Long (~350 hours)
 
-**Source Code:** http://github.com/camicroscope/camicroscope
+**Source Code:** https://github.com/camicroscope/iipimage
 
-**Primary Mentor:** Nan Li
-
-
-
-## Accessibility Testing and Improvement
-
-**Overview:** This project aims to improve the accessibility of caMicroscope's user interactions (focus on Slides and annotation module and administration. There are some limitations for the accessibility of the slide viewer) and add automatic testing as possible to ensure that further changes continue to uphold accessible usability. This would include integration of automatic testing tools (such as Axe, Pa11y, or Google Lighthouse) and compliance with the Web Content Accessibility Guidelines (WCAG) international standard.
-
-**Project Requirements:** 
- * Automatic reports for caMicroscope app pages and documentation pages according to some existing accessibility standard
- * Changes which lead to a meaningful improvement in these reports' results
- * Revision of user documentation with respect to accessibility and any changes made
-
-**Required Skills:** User Experience, Accessibility (a11y), CI/CD Testing
-
-**Difficulty:** Medium 
-
-**Project Length:** Short (~90 hours)
-
-**Source Code:** http://github.com/camicroscope/camicroscope
-
-**Primary Mentor:** Ryan Birmingham
-
-## Image Classification using Foundation Models
-**Overview:** This project will explore the utility of pre-trained and foundation AI models to carry out patch-level classification tasks in whole slide tissue images. A pre-trained or foundation model can be used as an encoder to train a task specific model. In our project, the task specific model will classify image patches extracted from whole slide images. Using a pre-trained or foundation model can help reduce training costs, by reducing the volume of training data and/or training a simpler model. It can also result in more robust and more accurate models. This project will primarily use models available at huggingface (https://huggingface.co). It will implement software components that: (1) will allow a user to search for and download a pre-trained or foundation model from the huggingface repository, (2) select a classification network from a collection of classification network implementations, (3) train the selected classification network with the pre-trained/foundation model as the encoder, and (4) apply the trained model on patches in a whole slide image.  
-
-**Project Requirements:** 
- * A documented method for training a classification model using a pre-trained or foundation model
- * Implementation of this method as a set of software components
- * Integration of the components with caMicroscope
-   
-**Current Status:** New backend and frontend components
-
-**Required Skills:** UX, Artificial Intelligence, Pytorch, Micro-services
-
-**Difficulty:** High
-
-**Project Length:** Long (~350 hours)
-
-**Source Code:** http://github.com/camicroscope/camicroscope 
-
-**Primary Mentor:** Tahsin Kurc
+**Primary Mentor:** Tony Pan
 
 ## Semantic Data Export and Exploration
 
@@ -136,45 +104,6 @@ The project involves the development of interactive features, allowing users to 
 
 **Primary Mentor:** Ryan Birmingham
 
-## Quality Triage via Image Visualization and Annotation
-
-**Overview:** In caMicroscope, images are often acquired in batches, such as during the digitization of multiple samples. These batches, intended to share common features, occasionally face issues like errors in staining, scanning, or labeling. This project addresses these challenges by enabling users to efficiently triage multiple slides visually. Users can add slide-level annotations, such as quality scores or flags indicating a need for re-scanning. This approach ensures a rapid and comprehensive assessment of slides, enhancing the overall quality of datasets within caMicroscope. By providing a quick and intuitive means to identify and address issues, the project significantly contributes to the platform's goal of maintaining high-quality, accurate datasets for robust medical imaging analysis.
-
-**Project Requirements:** 
- * A web application (within caMicroscope) which is able to let a user interactively view multiple slides at once and collect data from the user about those slides.
- * User documentation for this application extending caMicroscope's user documentation
- * Integrated with the caMicroscope UX and codebase
-
-**Required Skills:** User Experience, Image Visualization
-
-**Difficulty:** Easy 
-
-**Project Length:** Short (~90 hours)
-
-**Source Code:** http://github.com/camicroscope/camicroscope
-
-**Primary Mentor:** Nan Li
-
-## Pathologist Annotation Behavior Report
-
-**Overview:** caMicroscope is a widely used open-source end-to-end platform for digital pathology. Many pathologists use caMicroscope to annotate WSI cases in their daily work. How pathologists annotate the slide and the different behaviors that different pathologist works on the same slide are interesting questions. It is a good idea to collect and track pathologists’ annotation behavior in caMicroscope. Currently, caMicroscope only tracks the center position and zoom level of the user view. We propose an implementation intended for improving how to track the pathologist annotation behaviors and generating a pathologist behavior report in various formats such as image and pdf. The behavior report generally has the Pathologist’s view on a slide in  a timeline and the pathologist's actions in the slide viewer.
-
-**Project Requirements:** 
- * Extend and improve the "log" data from caMicroscope when it is collected
- * A web application (within caMicroscope) which is able to interpret and visualize user behavior data
- * User documentation for this application extending caMicroscope's user documentation
- * Integrated with the caMicroscope UX and codebase
-
-**Required Skills:** Javascript, HTML CSS, MongoDB, Web Backend
-
-**Difficulty:** Easy 
-
-**Project Length:** Short (~90 hours)
-
-**Source Code:** http://github.com/camicroscope/camicroscope
-
-**Primary Mentor:** Nan Li
-
 ## Eaglescope Automatic Configuration
 
 **Overview:** Eaglescope is a web application for exploratory analysis of high-dimensional datasets, especially biomedical datasets. This tool has been designed primarily to focus on cohort identification, that is to identify a set of criteria which produce distinct or interesting data. Right now, in order to create a dashboard, the entire layout needs to be specified in a configuration manifest. However, this has the side effect of requiring that users already understand the data well enough to select which possible visualizations would be most interesting.
@@ -194,6 +123,47 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 **Project Length:** Medium (~175 hours)
 
 **Source Code:** https://github.com/sharmalab/eaglescope
+
+**Primary Mentor:** Nan Li
+
+## ROI Visualizations for Eaglescope 
+
+**Overview:** Eaglescope is a related project to caMicroscope, but currently using them together is a quite manual process. More pressingly, the use cases we've seen implemented have generally been for collection and slide level exploration (i.e. finding slide(s) which meet your criteria). However, lots of expert data is collected on regions of interest (ROIs) which are spatial. This project would consist of adding visualization and filtering capability to Eaglescope to support a useful ROI-first dashboard. This would have a side effect of allowing for more non-pathology geospatial visualizations as well.
+
+**Project Requirements:** 
+ * Add geospatial filtering to Eaglescope
+ * Add at least one new visualiation for GEOJson Objects to Eaglescope
+
+**Current Status:** Existing Codebase, Some Earlier Demos may exist.
+
+**Required Skills:** UX, GEOJson, Data Visualization, JavaScript
+
+**Difficulty:** Medium
+
+**Project Length:** Short (~90 hours)
+
+**Source Code:** https://github.com/sharmalab/eaglescope
+
+**Primary Mentor:** Nan Li
+
+
+## DICOMWeb Path Tile Support
+
+**Overview:** caMicroscope usually is configured such that the whole slide imaging files are colocated with all of the caMicroscope components. However, in some cases, these slides may be split across other servers; one such standard for this is DICOM Web. WADO-RS defines a method by which frames of a DICOM pathology image may be retrieved. This project involves adding full functionality to caMicroscope to support rendering such images. At minimum, this would be a hook into caMicroscope's tile render engine (openseadragon), but would ideally include the ability to interact with these images fully by adding their URLs to caMicroscope's slide dataabase.
+
+**Project Requirements:** 
+ * Able to view variously sized DICOM Path images usuing DICOM Web
+ * UX flows to "register" such images in caMicroscope's Database
+
+**Current Status:** Some Exploratory Work Done Previously
+
+**Required Skills:** DICOMWEB, UX, JavaScript
+
+**Difficulty:** Easy
+
+**Project Length:** Medium (~175 hours)
+
+**Source Code:** https://github.com/camicroscope/camicroscope
 
 **Primary Mentor:** Ryan Birmingham
 
