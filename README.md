@@ -55,6 +55,34 @@ This project aims to add the backend support and frontend interactions to let us
 
 **Primary Mentors:** Ryan Birmingham
 
+
+## IIP Image Modernization 
+
+**Overview:** The tileserver service, IIP Image, is essential for caMicroscope's ability to function. Since it breaks large images of various formats into pieces and returns them, the intermediate format of the tiles impacts how the images end up being displayed to the end users.
+
+Fortunately, due to containerization, this quite tepermental software has been stable. However, this also means we have accumulated tech debt, and the IIP upstream codebase is well ahead of our server. We hope to be able to use modern features, especially losslessly compressed PNG encoding. This would require fixing or redoing the upgrades, which are quite substantial.
+
+ALTERNATIVELY: If you can get a python or other stable and performant alternate implementation of a IIIF or DZI (or other openseadragon compatible protocol) which works with the WSIs we use, this may be done in place. For exactly this reason, though, focus on clarity and maintainability, especially if you take this route.
+
+Please make a selection of high level method prior to proposal, if possible.
+
+**Project Requirements:** 
+ * Tile server should be able to support lossless png and other encodings
+ * Tile server should be able to read Openslide images
+ * Bonus, Tile server should be able to also read BioFormats Images
+
+**Current Status:** Existing Codebase, Work in progress patch
+
+**Required Skills:** C++, Image Processing, Web Services
+
+**Difficulty:** Difficult
+
+**Project Length:** Long (~350 hours)
+
+**Source Code:** https://github.com/camicroscope/iipimage
+
+**Primary Mentor:** Tony Pan
+
 ## Semantic Data Export and Exploration
 
 **Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
