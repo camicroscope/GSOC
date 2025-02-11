@@ -83,22 +83,19 @@ Please make a selection of high level method prior to proposal, if possible.
 
 **Primary Mentor:** Tony Pan
 
-## Semantic Data Export and Exploration
+## RDF Support for caMicroscope
 
-**Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data.
-
-The project involves the development of interactive features, allowing users to seamlessly navigate through the semantic layers, expand or collapse nested annotations, and gain a comprehensive understanding of the relationships between slides and annotations. This holistic approach aims to improve the overall user experience by offering a clearer and more insightful view of the complex data interactions within caMicroscope.
+**Overview:** This project focuses on enhancing caMicroscope's data representation by incorporating a semantic layer. The goal is to provide a sophisticated framework for handling slides, annotations about slides, and annotations nested within other annotations. Through the use of semantic representation, we aim to create a more structured and meaningful way to organize and understand the data. This project involves starting this process by adding RDF support for caMicroscope and modeling the existing relationships in a way which can later be expanded.
 
 **Project Requirements:** 
  * Interpreting caMicroscope's data and metadata in a documented semantic representation format
- * At least one novel visualization, app, or other way to understand the semantic relationships of caMicroscop data
- * Integrated with the caMicroscope UX and codebase
+ * RDF + SPARQL endpoints for this data
 
 **Required Skills:** Semantic Web
 
-**Difficulty:** Difficult 
+**Difficulty:** Medium 
 
-**Project Length:** Medium (~175 hours)
+**Project Length:** Long (~350 hours)
 
 **Source Code:** http://github.com/camicroscope/camicroscope
 
@@ -126,11 +123,15 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 
 **Primary Mentor:** Nan Li
 
-## ROI Visualizations for Eaglescope 
+## Eaglescope for caMicroscope Use Cases 
 
-**Overview:** Eaglescope is a related project to caMicroscope, but currently using them together is a quite manual process. More pressingly, the use cases we've seen implemented have generally been for collection and slide level exploration (i.e. finding slide(s) which meet your criteria). However, lots of expert data is collected on regions of interest (ROIs) which are spatial. This project would consist of adding visualization and filtering capability to Eaglescope to support a useful ROI-first dashboard. This would have a side effect of allowing for more non-pathology geospatial visualizations as well.
+**Overview:** Eaglescope is a dashboard/cohort visualization tool and related project to caMicroscope. Currently using Eaglescope and caMicroscope together is a quite manual process. More pressingly, the use cases we've seen implemented have generally been for collection and slide level exploration (i.e. finding slide(s) which meet your criteria). However, lots of expert data is collected on regions of interest (ROIs) which are spatial. 
+
+This project would involve expanding caMicroscope's API presentation layer to be more easily compatible with caMicroscope, as well as adding more visualizations to support meaningful views for groups of spatial annotation data.
 
 **Project Requirements:** 
+ * Add flat APIs for caMicroscope's existing to better work with Eaglescope
+ * Add Eaglescope as a way to select Images and Annotations in caMicroscope
  * Add geospatial filtering to Eaglescope
  * Add at least one new visualiation for GEOJson Objects to Eaglescope
 
@@ -147,9 +148,11 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 **Primary Mentor:** Nan Li
 
 
-## DICOMWeb Path Tile Support
+## DICOMWeb Pathology Tile Support
 
-**Overview:** caMicroscope usually is configured such that the whole slide imaging files are colocated with all of the caMicroscope components. However, in some cases, these slides may be split across other servers; one such standard for this is DICOM Web. WADO-RS defines a method by which frames of a DICOM pathology image may be retrieved. This project involves adding full functionality to caMicroscope to support rendering such images. At minimum, this would be a hook into caMicroscope's tile render engine (openseadragon), but would ideally include the ability to interact with these images fully by adding their URLs to caMicroscope's slide dataabase.
+**Overview:** caMicroscope usually is configured such that the whole slide imaging files are colocated with all of the caMicroscope components. However, in some cases, these slides may be split across other servers; one such standard for this is DICOM Web. WADO-RS defines a method by which frames of a DICOM pathology image may be retrieved. This project involves adding full functionality to caMicroscope to support rendering such images. At minimum, this would be a hook into caMicroscope's tile render engine (openseadragon), but would ideally include the ability to interact with these images fully by adding their URLs to caMicroscope's slide database.
+
+Viewing frames of images can be accomplised through the frontend via openseadragon's custom tile source API or a separate html5 canvas overlay, or in the backend by adding an IIPimage interface.
 
 **Project Requirements:** 
  * Able to view variously sized DICOM Path images usuing DICOM Web
@@ -157,11 +160,11 @@ This project, Eaglescope Automatic Configuration, aims to provide instant statis
 
 **Current Status:** Some Exploratory Work Done Previously
 
-**Required Skills:** DICOMWEB, UX, JavaScript
+**Required Skills:** DICOMWEB, UX, JavaScript, Possibly C++
 
-**Difficulty:** Easy
+**Difficulty:** Medium
 
-**Project Length:** Medium (~175 hours)
+**Project Length:** Long (~350 hours)
 
 **Source Code:** https://github.com/camicroscope/camicroscope
 
