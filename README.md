@@ -170,6 +170,33 @@ Viewing frames of images can be accomplised through the frontend via openseadrag
 
 **Primary Mentor:** Ryan Birmingham
 
+
+## Integrating Deep Learning Models to Classify Whole Slide Images
+
+**Overview:** This project will develop software tools to combine multiple pre-trained deep learning models to develop models for classifying whole slide tissue images or image regions. The tools will be designed to provide a library and micro-service interfaces that can be utilized by other caMicroscope components, such as the caMicroscope Web user interfaces. 
+
+The project is motivated by the rapidly increasing number of pre-trained or foundation models that are available in model repositories such as Hugging Face. Foundation models can reduce the cost of training task specific models. The goal of this project is to develop tooling to enable a user to combine multiple pre-trained models through feature fusion techniques or latent conditional diffusion methods and train classification models. The tool will allow the user to save the trained model and use it to analyze whole slide images or user-selected regions.  
+
+Viewing frames of images can be accomplised through the frontend via openseadragon's custom tile source API or a separate html5 canvas overlay, or in the backend by adding an IIPimage interface.
+
+**Project Requirements:** 
+ * The toolkit should be able to integrate models from Hugging Face.
+ * The toolkit should work with image patches (in jpeg or png formats) and whole slide tissue images
+ * The toolkit should be accessible as a python library and via a micro-service REST interface 
+
+**Current Status:** Existing code to use one pre-trained model to develop a classifier 
+
+**Required Skills:** PyTorch, Python, Image Processing, REST APIs
+
+**Difficulty:** Difficult
+
+**Project Length:** Long (~350 hours)
+
+**Source Code:** https://github.com/tkurc/wsi_classification_gsoc2024
+
+**Primary Mentor:** Tahsin Kurc 
+
+
 &nbsp;
 ***
 # Applying for GSOC
