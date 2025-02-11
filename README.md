@@ -56,7 +56,7 @@ This project aims to add the backend support and frontend interactions to let us
 **Primary Mentors:** Ryan Birmingham
 
 
-## IIP Tile Server Image Modernization 
+## IIP Image Tile Server Modernization 
 
 **Overview:** The tileserver service, IIP Image, is essential for caMicroscope's ability to function. Since it breaks large images of various formats into pieces and returns them, the intermediate format of the tiles impacts how the images end up being displayed to the end users.
 
