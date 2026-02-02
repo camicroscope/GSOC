@@ -1,3 +1,11 @@
+# caMicroscope is Not Participating in GSOC 2026
+
+Hello all,
+Due to changes in priorities from funders, the grant and volunteer hours that go caMicroscope are much less than they have been in years past. Thus, I do not belive that we are active enough to participate in GSOC 2026. The list of last year's projects are below in case someone wants something interesting to work on. If you're interested, contact us and we'll support you as we can.
+
+Thank you,
+caMicroscope Team
+
 # caMicroscope GSoC 2025
 
 <h2 align="center">
